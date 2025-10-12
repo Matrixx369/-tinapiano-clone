@@ -5,12 +5,25 @@ import { useEffect, useState } from 'react'
 export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false)
 
-  // Force scroll to top on page load/refresh
+  // Force scroll to top on page load/refresh - IMPROVED VERSION
   useEffect(() => {
+    // Disable browser's scroll restoration
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual'
+    }
+    
+    // Force immediate scroll to top
     window.scrollTo(0, 0)
+    
+    // Also force it after a tiny delay to override browser behavior
+    const timer = setTimeout(() => {
+      window.scrollTo(0, 0)
+    }, 0)
+
+    return () => clearTimeout(timer)
   }, [])
 
-  // Show button when page is scrolled down
+  // Show/hide button based on scroll position
   useEffect(() => {
     const toggleVisibility = () => {
       if (window.pageYOffset > 300) {
@@ -22,12 +35,9 @@ export default function ScrollToTop() {
 
     window.addEventListener('scroll', toggleVisibility)
 
-    return () => {
-      window.removeEventListener('scroll', toggleVisibility)
-    }
+    return () => window.removeEventListener('scroll', toggleVisibility)
   }, [])
 
-  // Scroll to top smoothly
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -40,15 +50,14 @@ export default function ScrollToTop() {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 bg-[#8fc0e5] text-white p-4 rounded-full shadow-lg hover:bg-[#7ab0d8] transition-all duration-300 transform hover:scale-110 z-50"
+          className="fixed bottom-8 right-8 bg-[#8fc0e5] text-white p-4 rounded-full shadow-lg hover:bg-[#7ab0d8] transition-all duration-300 hover:scale-110 z-50"
           aria-label="Scroll to top"
         >
           <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="w-6 h-6"
             fill="none"
-            viewBox="0 0 24 24"
             stroke="currentColor"
+            viewBox="0 0 24 24"
           >
             <path
               strokeLinecap="round"
