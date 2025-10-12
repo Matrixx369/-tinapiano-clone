@@ -320,25 +320,25 @@ export default function RingenPage() {
       </FadeInSection>
 
       {/* Custom Ring Section */}
-      <FadeInSection delay={200}>
-        <section className="bg-gray-900 py-20">
-          <div className="container mx-auto px-6">
-            <div className="text-center max-w-3xl mx-auto">
-              <h2 className="text-4xl md:text-5xl font-light text-[#8fc0e5] mb-8 font-[family-name:var(--font-playfair)]">Op zoek naar een unieke ring?</h2>
-              <p className="text-white text-lg leading-relaxed mb-10" style={{ lineHeight: '1.8' }}>
-                Laat ons uw droomring ontwerpen en maken. Elk stuk wordt speciaal voor u gemaakt,
-                afgestemd op uw persoonlijke smaak en wensen.
-              </p>
-              <Link
-                href="/contact"
-                className="inline-block bg-[#8fc0e5] text-white px-8 py-4 rounded-md font-medium hover:bg-[#7ab0d8] hover:shadow-xl transition-all duration-300 hover:scale-105 uppercase text-xl"
-              >
-                Contacteer ons voor een ontwerp
-              </Link>
-            </div>
-          </div>
-        </section>
-      </FadeInSection>
+<FadeInSection delay={200}>
+  <section className="bg-gray-900 py-20 lg:py-24">
+    <div className="container mx-auto px-6">
+      <div className="text-center max-w-4xl mx-auto">
+        <h2 className="text-4xl md:text-5xl font-light text-[#8fc0e5] mb-8 font-[family-name:var(--font-playfair)]">Op zoek naar een unieke ring?</h2>
+        <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-10 font-light" style={{ lineHeight: '1.6' }}>
+          Laat ons uw droomring ontwerpen en maken. Elk stuk wordt speciaal voor u gemaakt, afgestemd op uw persoonlijke smaak en wensen.
+        </p>
+        <Link
+          href="/contact"
+          className="inline-block bg-[#8fc0e5] text-white px-8 py-4 rounded-md font-medium hover:bg-[#7ab0d8] hover:shadow-xl transition-all duration-300 hover:scale-105 uppercase text-xl"
+        >
+          Contacteer ons voor een ontwerp
+        </Link>
+      </div>
+    </div>
+  </section>
+</FadeInSection>
+
 
       {/* Footer */}
       <footer className="bg-white text-gray-800 py-12 border-t border-gray-200">
