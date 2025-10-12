@@ -54,7 +54,11 @@ export default function Home() {
                 />
               </div>
               <div className="md:w-1/2">
-                <h2 className="text-4xl md:text-5xl font-light text-[#8fc0e5] mb-8 font-[family-name:var(--font-playfair)]">10a is een Belgisch Label!</h2>
+                <h2 className="text-4xl md:text-5xl font-light text-[#8fc0e5] mb-8 font-[family-name:var(--font-playfair)]">
+                    <span className="text-5xl md:text-6xl">10</span>
+                    <span className="text-3xl md:text-4xl">a</span>
+                    {' '}is een Belgisch Label!
+                </h2>
                 <p className="text-gray-700 text-lg leading-relaxed" style={{ lineHeight: '1.8' }}>
                   Ieder juweel is uniek. Tina (10a) ontwerpt en maakt juwelen voor wie houdt van puurheid, luxe en tijdloze schoonheid.
                   Robuust, markant maar ook vrouwelijk en zacht. Ongewone sieraden maken de drager interessant, onderstrepen haar persoonlijkheid.
