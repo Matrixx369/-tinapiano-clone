@@ -20,23 +20,23 @@ export default function RingenPage() {
         />
       </section>
 
-      {/* Title Section with Aqua Background */}
-      <FadeInSection>
-        <section className="bg-[#8fc0e5] py-20 lg:py-24">
-          <div className="container mx-auto px-6 text-center">
-            <h1 className="text-4xl md:text-6xl font-light text-gray-900 mb-8 font-[family-name:var(--font-playfair)]">Ringen</h1>
-            <p className="text-gray-800 text-lg leading-relaxed max-w-3xl mx-auto mb-10" style={{ lineHeight: '1.8' }}>
-              Bent u op zoek naar een ring die stijl en verfijning uitstraalt? Onze collectie biedt unieke en trendy ontwerpen. Klaar om uw gepersonaliseerde ring te laten maken?
-            </p>
-            <Link
-              href="/contact"
-              className="inline-block bg-gray-700 text-white px-8 py-4 rounded-md font-medium hover:bg-gray-600 hover:shadow-xl transition-all duration-300 hover:scale-105 uppercase text-xl"
-            >
-              Contacteer ons
-            </Link>
-          </div>
-        </section>
-      </FadeInSection>
+      {/* Title Section with Dark Background - MATCHES BOTTOM SECTION */}
+<FadeInSection>
+  <section className="bg-gray-900 py-20 lg:py-24">
+    <div className="container mx-auto px-6 text-center">
+      <h1 className="text-4xl md:text-6xl font-light text-[#8fc0e5] mb-8 font-[family-name:var(--font-playfair)]">Ringen</h1>
+      <p className="text-white text-lg leading-relaxed max-w-3xl mx-auto mb-10" style={{ lineHeight: '1.8' }}>
+        Bent u op zoek naar een ring die stijl en verfijning uitstraalt? Onze collectie biedt unieke en trendy ontwerpen. Klaar om uw gepersonaliseerde ring te laten maken?
+      </p>
+      <Link
+        href="/contact"
+        className="inline-block bg-[#8fc0e5] text-white px-8 py-4 rounded-md font-medium hover:bg-[#7ab0d8] hover:shadow-xl transition-all duration-300 hover:scale-105 uppercase text-xl"
+      >
+        Contacteer ons
+      </Link>
+    </div>
+  </section>
+</FadeInSection>
 
       {/* Ring Gallery */}
       <FadeInSection delay={100}>
