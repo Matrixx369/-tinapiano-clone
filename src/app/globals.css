@@ -81,3 +81,22 @@
 .animate-ken-burns {
   animation: ken-burns 10s ease-in-out infinite alternate;
 }
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Subtle page load fade-in */
+body {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

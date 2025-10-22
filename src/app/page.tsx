@@ -23,9 +23,9 @@ export default function Home() {
 
       {/* Dark Text Section with Button */}
       <FadeInSection>
-        <section className="bg-gray-900 py-20 lg:py-24">
+        <section className="bg-gradient-to-b from-gray-900 to-gray-800 py-20 lg:py-24">
           <div className="container mx-auto px-6 text-center">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl text-white leading-relaxed max-w-4xl mx-auto mb-10 font-[family-name:var(--font-playfair)] font-light" style={{ lineHeight: '1.6' }}>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl text-white leading-relaxed max-w-4xl mx-auto mb-10 font-[family-name:var(--font-playfair)] font-light tracking-tight" style={{ lineHeight: '1.6' }}>
               Laat uw persoonlijkheid schitteren met onze handgemaakte juwelen. 
               Elk stuk is uniek en uiteraard vervaardigd in overleg met de klant
             </h1>
@@ -54,10 +54,10 @@ export default function Home() {
                 />
               </div>
               <div className="md:w-1/2">
-                <h2 className="text-4xl md:text-5xl font-light text-[#8fc0e5] mb-8 font-[family-name:var(--font-playfair)]">
-                    <span className="text-5xl md:text-6xl">10</span>
-                    <span className="text-3xl md:text-4xl">a</span>
-                    {' '}is een Belgisch Label!
+                <h2 className="text-4xl md:text-5xl font-light text-[#8fc0e5] mb-8 font-[family-name:var(--font-playfair)] tracking-tight">
+                  <span className="text-5xl md:text-6xl">10</span>
+                  <span className="text-3xl md:text-4xl">a</span>
+                  {' '}is een Belgisch Label!
                 </h2>
                 <p className="text-gray-700 text-lg leading-relaxed" style={{ lineHeight: '1.8' }}>
                   Ieder juweel is uniek. Tina (10a) ontwerpt en maakt juwelen voor wie houdt van puurheid, luxe en tijdloze schoonheid.
@@ -69,14 +69,14 @@ export default function Home() {
         </section>
       </FadeInSection>
 
-      {/* Product Categories */}
+      {/* Product Categories - NO BORDERS */}
       <FadeInSection delay={150}>
         <section className="py-20 lg:py-24 bg-gray-900">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl md:text-5xl font-light text-[#8fc0e5] text-center mb-16 font-[family-name:var(--font-playfair)]">Onze sieraden</h2>
+          <h2 className="text-4xl md:text-5xl font-light text-[#8fc0e5] text-center mb-16 font-[family-name:var(--font-playfair)] tracking-tight">Onze sieraden</h2>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
             <Link href="/ringen" className="group cursor-pointer">
-              <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-3 hover:scale-105 border border-gray-100">
+              <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-3 hover:scale-105">
                 <div className="aspect-square relative overflow-hidden">
                   <Image
                     src="https://ext.same-assets.com/3019426010/2649150772.webp"
@@ -92,7 +92,7 @@ export default function Home() {
             </Link>
 
             <Link href="/oorringen" className="group cursor-pointer">
-              <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-3 hover:scale-105 border border-gray-100">
+              <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-3 hover:scale-105">
                 <div className="aspect-square relative overflow-hidden">
                   <Image
                     src="https://ext.same-assets.com/3019426010/1871366328.webp"
@@ -108,7 +108,7 @@ export default function Home() {
             </Link>
 
             <Link href="/halskettingen" className="group cursor-pointer">
-              <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-3 hover:scale-105 border border-gray-100">
+              <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-3 hover:scale-105">
                 <div className="aspect-square relative overflow-hidden">
                   <Image
                     src="https://ext.same-assets.com/3019426010/1072932616.webp"
@@ -124,7 +124,7 @@ export default function Home() {
             </Link>
 
             <Link href="/armbanden" className="group cursor-pointer">
-              <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-3 hover:scale-105 border border-gray-100">
+              <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-3 hover:scale-105">
                 <div className="aspect-square relative overflow-hidden">
                   <Image
                     src="https://ext.same-assets.com/3019426010/2462445221.webp"
@@ -140,7 +140,7 @@ export default function Home() {
             </Link>
 
             <Link href="/broches" className="group cursor-pointer">
-              <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-3 hover:scale-105 border border-gray-100">
+              <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-3 hover:scale-105">
                 <div className="aspect-square relative overflow-hidden">
                   <Image
                     src="https://ext.same-assets.com/3019426010/1792438925.webp"
@@ -174,7 +174,7 @@ export default function Home() {
               />
             </div>
             <div className="lg:w-1/2">
-              <h2 className="text-4xl md:text-5xl font-light text-[#8fc0e5] mb-8 font-[family-name:var(--font-playfair)]">Juwelen op maat</h2>
+              <h2 className="text-4xl md:text-5xl font-light text-[#8fc0e5] mb-8 font-[family-name:var(--font-playfair)] tracking-tight">Juwelen op maat</h2>
               <p className="text-gray-700 text-lg leading-relaxed mb-10" style={{ lineHeight: '1.8' }}>
                 Op zoek naar een uniek juweel die bij uw persoonlijkheid past? Bij 10a juweelontwerp helpen wij u bij het creëren van een op maat gemaakte juweel dat volledig aan uw wensen voldoet. Contacteer ons vandaag nog om een afspraak te maken!
               </p>
@@ -205,7 +205,7 @@ export default function Home() {
               />
             </div>
             <div className="lg:w-1/2">
-              <h2 className="text-4xl md:text-5xl font-light text-[#8fc0e5] mb-8 font-[family-name:var(--font-playfair)]">Herenjuwelen</h2>
+              <h2 className="text-4xl md:text-5xl font-light text-[#8fc0e5] mb-8 font-[family-name:var(--font-playfair)] tracking-tight">Herenjuwelen</h2>
               <p className="text-gray-700 text-lg leading-relaxed mb-6" style={{ lineHeight: '1.8' }}>
                 Bent u op zoek naar stijlvolle en trendy juwelen voor mannen? Onze collectie herenjuwelen is speciaal ontworpen om mannen een unieke en verfijnde uitstraling te geven. Van elegante armbanden, sleutelhangers tot klassieke manchetknopen, wij hebben alles wat u nodig heeft om uw outfit compleet te maken.
               </p>
@@ -233,7 +233,7 @@ export default function Home() {
               />
             </div>
             <div className="lg:w-1/2">
-              <h2 className="text-4xl md:text-5xl font-light text-[#8fc0e5] mb-8 font-[family-name:var(--font-playfair)]">Herontwerpen</h2>
+              <h2 className="text-4xl md:text-5xl font-light text-[#8fc0e5] mb-8 font-[family-name:var(--font-playfair)] tracking-tight">Herontwerpen</h2>
               <p className="text-gray-700 text-lg leading-relaxed" style={{ lineHeight: '1.8' }}>
                 10a Juweelontwerp biedt ook herontwerp services aan, waarbij we uw oude juwelen of erfstukken transformeren tot een nieuw hedendaags juweel.
               </p>
@@ -258,7 +258,7 @@ export default function Home() {
               />
             </div>
             <div className="lg:w-1/2">
-              <h2 className="text-4xl md:text-5xl font-light text-[#8fc0e5] mb-8 font-[family-name:var(--font-playfair)]">Reparatie</h2>
+              <h2 className="text-4xl md:text-5xl font-light text-[#8fc0e5] mb-8 font-[family-name:var(--font-playfair)] tracking-tight">Reparatie</h2>
               <p className="text-gray-700 text-lg leading-relaxed" style={{ lineHeight: '1.8' }}>
                 Vertrouw ons uw dierbare juwelen of gebroken parelsnoer toe aan onze reparatieservice en herontdek de schoonheid die ze ooit hadden. Neem vandaag nog contact met ons op om een afspraak te maken en uw juwelen weer te laten stralen.
               </p>
@@ -272,23 +272,23 @@ export default function Home() {
       <FadeInSection delay={100}>
       <section className="py-20 lg:py-24 bg-[#8fc0e5]">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl md:text-5xl font-light text-center text-gray-900 mb-16 font-[family-name:var(--font-playfair)]">Getuigenissen</h2>
+          <h2 className="text-4xl md:text-5xl font-light text-center text-gray-900 mb-16 font-[family-name:var(--font-playfair)] tracking-tight">Getuigenissen</h2>
           <div className="grid md:grid-cols-3 gap-10">
-            <div className="text-center bg-white bg-opacity-20 p-8 rounded-lg backdrop-blur-sm">
+            <div className="text-center bg-white bg-opacity-20 p-8 rounded-lg backdrop-blur-sm hover:bg-opacity-30 hover:scale-105 transition-all duration-300 cursor-pointer">
               <div className="text-yellow-400 text-2xl mb-4">★★★★★</div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4 font-[family-name:var(--font-playfair)]">Christel B. - Hasselt</h3>
               <p className="text-gray-800 italic leading-relaxed" style={{ lineHeight: '1.8' }}>
                 "Tina heeft voor mij een erfstuk opnieuw ontworpen en het resultaat is verbluffend. Haar vakmanschap en oog voor detail zijn ongevenaard. Een ware professional die ik iedereen zou aanraden."
               </p>
             </div>
-            <div className="text-center bg-white bg-opacity-20 p-8 rounded-lg backdrop-blur-sm">
+            <div className="text-center bg-white bg-opacity-20 p-8 rounded-lg backdrop-blur-sm hover:bg-opacity-30 hover:scale-105 transition-all duration-300 cursor-pointer">
               <div className="text-yellow-400 text-2xl mb-4">★★★★★</div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4 font-[family-name:var(--font-playfair)]">Jeroen T. - Maastricht</h3>
               <p className="text-gray-800 italic leading-relaxed" style={{ lineHeight: '1.8' }}>
                 "Ik ben ontzettend blij met de ring die Tina voor me heeft gemaakt. Ze luistert goed, denkt mee en haar werk is van hoge kwaliteit. Ze is zeer deskundig en levert uitstekend werk af."
               </p>
             </div>
-            <div className="text-center bg-white bg-opacity-20 p-8 rounded-lg backdrop-blur-sm">
+            <div className="text-center bg-white bg-opacity-20 p-8 rounded-lg backdrop-blur-sm hover:bg-opacity-30 hover:scale-105 transition-all duration-300 cursor-pointer">
               <div className="text-yellow-400 text-2xl mb-4">★★★★★</div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4 font-[family-name:var(--font-playfair)]">Valerie V. - Knokke</h3>
               <p className="text-gray-800 italic leading-relaxed" style={{ lineHeight: '1.8' }}>
@@ -302,9 +302,9 @@ export default function Home() {
 
       {/* Final CTA */}
       <FadeInSection delay={200}>
-      <section className="py-20 lg:py-24 bg-gray-900">
+      <section className="py-20 lg:py-24 bg-gradient-to-b from-gray-800 to-gray-900">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-4xl md:text-5xl font-light text-white mb-10 font-[family-name:var(--font-playfair)]">
+          <h2 className="text-4xl md:text-5xl font-light text-white mb-10 font-[family-name:var(--font-playfair)] tracking-tight">
             Schitterend en op maat. Tijd om uw droomjuweel te ontwerpen?
           </h2>
           <Link 
