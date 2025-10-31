@@ -38,7 +38,7 @@ export default function RingenPage() {
         </section>
       </FadeInSection>
 
-      {/* Ring Gallery - NO BORDERS + TRUNCATED TEXT */}
+      {/* Ring Gallery - SMALLER TEXT FOR BETTER FIT */}
       <FadeInSection delay={100}>
         <main className="py-20 lg:py-24 bg-white">
           <div className="container mx-auto px-6">
@@ -55,7 +55,7 @@ export default function RingenPage() {
                     />
                   </div>
                   <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-base text-center tracking-wide truncate px-2">Geelgoud 18K met saffier</p>
+                    <p className="text-white text-sm text-center truncate px-2">Geelgoud 18K met saffier</p>
                   </div>
                 </div>
               </div>
@@ -72,7 +72,7 @@ export default function RingenPage() {
                     />
                   </div>
                   <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-base text-center tracking-wide truncate px-2">Geelgoud 18K</p>
+                    <p className="text-white text-sm text-center truncate px-2">Geelgoud 18K</p>
                   </div>
                 </div>
               </div>
@@ -89,7 +89,7 @@ export default function RingenPage() {
                     />
                   </div>
                   <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-base text-center tracking-wide truncate px-2">Sterlingsilver 925 met aquamarijn en citrien</p>
+                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925 met aquamarijn en citrien</p>
                   </div>
                 </div>
               </div>
@@ -106,7 +106,7 @@ export default function RingenPage() {
                     />
                   </div>
                   <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-base text-center tracking-wide truncate px-2">Witgoud 18K met groene saffier</p>
+                    <p className="text-white text-sm text-center truncate px-2">Witgoud 18K met groene saffier</p>
                   </div>
                 </div>
               </div>
@@ -123,7 +123,7 @@ export default function RingenPage() {
                     />
                   </div>
                   <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-base text-center tracking-wide truncate px-2">Sterlingsilver 925 met edelstenen</p>
+                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925 met edelstenen</p>
                   </div>
                 </div>
               </div>
@@ -140,7 +140,7 @@ export default function RingenPage() {
                     />
                   </div>
                   <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-base text-center tracking-wide truncate px-2">Sterlingsilver 925 met aquamarijn</p>
+                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925 met aquamarijn</p>
                   </div>
                 </div>
               </div>
@@ -157,7 +157,7 @@ export default function RingenPage() {
                     />
                   </div>
                   <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-base text-center tracking-wide truncate px-2">Sterlingsilver 925 met aquamarijn</p>
+                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925 met aquamarijn</p>
                   </div>
                 </div>
               </div>
@@ -174,7 +174,7 @@ export default function RingenPage() {
                     />
                   </div>
                   <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-base text-center tracking-wide truncate px-2">Sterlingsilver 925 met aquamarijn</p>
+                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925 met aquamarijn</p>
                   </div>
                 </div>
               </div>
@@ -191,7 +191,7 @@ export default function RingenPage() {
                     />
                   </div>
                   <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-base text-center tracking-wide truncate px-2">Sterlingsilver 925 met citrien</p>
+                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925 met citrien</p>
                   </div>
                 </div>
               </div>
@@ -208,7 +208,7 @@ export default function RingenPage() {
                     />
                   </div>
                   <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-base text-center tracking-wide truncate px-2">Sterlingsilver 925 met morganiet</p>
+                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925 met morganiet</p>
                   </div>
                 </div>
               </div>
@@ -225,7 +225,7 @@ export default function RingenPage() {
                     />
                   </div>
                   <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-base text-center tracking-wide truncate px-2">Sterlingsilver 925 met aquamarijn</p>
+                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925 met aquamarijn</p>
                   </div>
                 </div>
               </div>
@@ -242,7 +242,7 @@ export default function RingenPage() {
                     />
                   </div>
                   <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-base text-center tracking-wide truncate px-2">Sterlingsilver 925 met roségoud</p>
+                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925 met roségoud</p>
                   </div>
                 </div>
               </div>
@@ -259,7 +259,7 @@ export default function RingenPage() {
                     />
                   </div>
                   <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-base text-center tracking-wide truncate px-2">Sterlingsilver 925 met citrien en peridot</p>
+                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925 met citrien en peridot</p>
                   </div>
                 </div>
               </div>
@@ -276,7 +276,7 @@ export default function RingenPage() {
                     />
                   </div>
                   <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-base text-center tracking-wide truncate px-2">Sterlingsilver 925</p>
+                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925</p>
                   </div>
                 </div>
               </div>
@@ -293,7 +293,7 @@ export default function RingenPage() {
                     />
                   </div>
                   <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-base text-center tracking-wide truncate px-2">Sterlingsilver 925</p>
+                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925</p>
                   </div>
                 </div>
               </div>
@@ -310,7 +310,7 @@ export default function RingenPage() {
                     />
                   </div>
                   <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-base text-center tracking-wide truncate px-2">Sterlingsilver 925 met peridot</p>
+                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925 met peridot</p>
                   </div>
                 </div>
               </div>
