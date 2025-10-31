@@ -1,5 +1,5 @@
 [build]
-  command = "next build && xcopy public out /E /I /Y"
+  command = "next build && cp -r public/* out/"
   publish = "out"
 
 [[redirects]]
