@@ -1,0 +1,8 @@
+[build]
+  command = "next build && xcopy public out /E /I /Y"
+  publish = "out"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
