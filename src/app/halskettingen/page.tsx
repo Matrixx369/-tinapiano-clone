@@ -8,7 +8,7 @@ import FadeInSection from '../../components/FadeInSection'
 import ScrollToTop from '../../components/ScrollToTop'
 
 export default function HalskettingenPage() {
-  const [selectedImage, setSelectedImage] = useState(null)
+  const [selectedImage, setSelectedImage] = useState<{src: string; name: string} | null>(null)
 
   const products = [
     {
