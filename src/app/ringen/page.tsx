@@ -13,7 +13,7 @@ export default function RingenPage() {
       {/* Hero Image */}
       <section className="relative h-[600px] lg:h-[750px] overflow-hidden">
         <Image
-          src="https://afe081fed4.clvaw-cdnwnd.com/658ebfc1c006b3887df112a24a576036/200000453-70cb470cb7/SFEERBEELD%20RINGEN-115.jpeg?ph=afe081fed4"
+          src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927797/ringen-02_j85kck.jpg"
           alt="Ringen collectie"
           fill
           className="object-cover animate-ken-burns"
@@ -48,7 +48,7 @@ export default function RingenPage() {
                 <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
                   <div className="aspect-square relative overflow-hidden bg-white">
                     <Image
-                      src="https://afe081fed4.clvaw-cdnwnd.com/658ebfc1c006b3887df112a24a576036/200000811-af7d4af7d8/1%20ring%20ringnaamloos-_24-removebg%20kopie%CC%88ren-1.jpeg?ph=afe081fed4"
+                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927797/ringen-03_qtcbgt.jpg"
                       alt="Geelgoud 18K met saffier"
                       fill
                       className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
@@ -65,7 +65,7 @@ export default function RingenPage() {
                 <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
                   <div className="aspect-square relative overflow-hidden bg-white">
                     <Image
-                      src="https://afe081fed4.clvaw-cdnwnd.com/658ebfc1c006b3887df112a24a576036/200000813-de7d5de7d7/2%20Ring%20goud%20Axelle-%2001-2-3.jpeg?ph=afe081fed4"
+                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927797/ringen-04_dz7ebc.jpg"
                       alt="Geelgoud 18K"
                       fill
                       className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
@@ -82,14 +82,14 @@ export default function RingenPage() {
                 <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
                   <div className="aspect-square relative overflow-hidden bg-white">
                     <Image
-                      src="https://afe081fed4.clvaw-cdnwnd.com/658ebfc1c006b3887df112a24a576036/200000821-65f9a65f9b/2%20ringen%20IMG_1705.jpeg?ph=afe081fed4"
-                      alt="Sterlingsilver 925 met aquamarijn en citrien"
+                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927797/ringen-05_g7erv4.jpg"
+                      alt="Sterlingsilver 925 met aquamarijn en citrine"
                       fill
                       className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
                     />
                   </div>
                   <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925 met aquamarijn en citrien</p>
+                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925 met aquamarijn en citrine</p>
                   </div>
                 </div>
               </div>
@@ -99,7 +99,7 @@ export default function RingenPage() {
                 <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
                   <div className="aspect-square relative overflow-hidden bg-white">
                     <Image
-                      src="https://afe081fed4.clvaw-cdnwnd.com/658ebfc1c006b3887df112a24a576036/200000819-65c3165c32/3%20ring%20IMG_3874-6.jpeg?ph=afe081fed4"
+                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927797/ringen-06_yxeroi.jpg"
                       alt="Witgoud 18K met groene saffier"
                       fill
                       className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
@@ -116,7 +116,7 @@ export default function RingenPage() {
                 <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
                   <div className="aspect-square relative overflow-hidden bg-white">
                     <Image
-                      src="https://afe081fed4.clvaw-cdnwnd.com/658ebfc1c006b3887df112a24a576036/200000823-4c8e94c8eb/4%20ringen%20%20IMG_1699-8.jpeg?ph=afe081fed4"
+                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927797/ringen-07_cbpus5.jpg"
                       alt="Sterlingsilver 925 met edelstenen"
                       fill
                       className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
@@ -133,7 +133,7 @@ export default function RingenPage() {
                 <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
                   <div className="aspect-square relative overflow-hidden bg-white">
                     <Image
-                      src="https://afe081fed4.clvaw-cdnwnd.com/658ebfc1c006b3887df112a24a576036/200000825-4ce194ce1b/6%20ring%20zilver-9.jpeg?ph=afe081fed4"
+                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927797/ringen-08_busvyk.jpg"
                       alt="Sterlingsilver 925 met aquamarijn"
                       fill
                       className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
@@ -150,7 +150,7 @@ export default function RingenPage() {
                 <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
                   <div className="aspect-square relative overflow-hidden bg-white">
                     <Image
-                      src="https://afe081fed4.clvaw-cdnwnd.com/658ebfc1c006b3887df112a24a576036/200000835-5718357184/7%20ring%20ring_met_aquamarin-6.jpeg?ph=afe081fed4"
+                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927797/ringen-09_gk85un.jpg"
                       alt="Sterlingsilver 925 met aquamarijn"
                       fill
                       className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
@@ -167,7 +167,7 @@ export default function RingenPage() {
                 <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
                   <div className="aspect-square relative overflow-hidden bg-white">
                     <Image
-                      src="https://afe081fed4.clvaw-cdnwnd.com/658ebfc1c006b3887df112a24a576036/200000837-64b2564b27/8%20ring%20met%20aqauamarijn-4.jpeg?ph=afe081fed4"
+                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927798/ringen-10_klwyt4.jpg"
                       alt="Sterlingsilver 925 met aquamarijn"
                       fill
                       className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
@@ -184,14 +184,14 @@ export default function RingenPage() {
                 <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
                   <div className="aspect-square relative overflow-hidden bg-white">
                     <Image
-                      src="https://afe081fed4.clvaw-cdnwnd.com/658ebfc1c006b3887df112a24a576036/200000839-a178fa1792/10%20ring%20zilver%20citrien-7.jpeg?ph=afe081fed4"
-                      alt="Sterlingsilver 925 met citrien"
+                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927797/ringen-11_pu4bu3.jpg"
+                      alt="Sterlingsilver 925 met citrine"
                       fill
                       className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
                     />
                   </div>
                   <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925 met citrien</p>
+                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925 met citrine</p>
                   </div>
                 </div>
               </div>
@@ -201,7 +201,7 @@ export default function RingenPage() {
                 <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
                   <div className="aspect-square relative overflow-hidden bg-white">
                     <Image
-                      src="https://afe081fed4.clvaw-cdnwnd.com/658ebfc1c006b3887df112a24a576036/200000861-678386783b/11%20ring_morganiet-4.jpeg?ph=afe081fed4"
+                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927798/ringen-12_sfu2hu.jpg"
                       alt="Sterlingsilver 925 met morganiet"
                       fill
                       className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
@@ -218,7 +218,7 @@ export default function RingenPage() {
                 <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
                   <div className="aspect-square relative overflow-hidden bg-white">
                     <Image
-                      src="https://afe081fed4.clvaw-cdnwnd.com/658ebfc1c006b3887df112a24a576036/200000843-b2bf4b2bf5/12%20ringen%20aquamarijn-3.jpeg?ph=afe081fed4"
+                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927798/ringen-13_ycgygy.jpg"
                       alt="Sterlingsilver 925 met aquamarijn"
                       fill
                       className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
@@ -235,7 +235,7 @@ export default function RingenPage() {
                 <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
                   <div className="aspect-square relative overflow-hidden bg-white">
                     <Image
-                      src="https://afe081fed4.clvaw-cdnwnd.com/658ebfc1c006b3887df112a24a576036/200000847-473494734c/13%20ring_rood_goud_zilver-3.jpeg?ph=afe081fed4"
+                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927798/ringen-14_aw4lgg.jpg"
                       alt="Sterlingsilver 925 met roségoud"
                       fill
                       className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
@@ -252,7 +252,7 @@ export default function RingenPage() {
                 <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
                   <div className="aspect-square relative overflow-hidden bg-white">
                     <Image
-                      src="https://afe081fed4.clvaw-cdnwnd.com/658ebfc1c006b3887df112a24a576036/200000849-3b2a63b2a8/14%20ring%20zilver-4.jpeg?ph=afe081fed4"
+                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927798/ringen-15_pzj3sn.jpg"
                       alt="Sterlingsilver 925 met citrien en peridot"
                       fill
                       className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
@@ -269,7 +269,7 @@ export default function RingenPage() {
                 <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
                   <div className="aspect-square relative overflow-hidden bg-white">
                     <Image
-                      src="https://afe081fed4.clvaw-cdnwnd.com/658ebfc1c006b3887df112a24a576036/200000853-48efb48efd/15%20ring%20zilver%20-5.jpeg?ph=afe081fed4"
+                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927798/ringen-16_higfxb.jpg"
                       alt="Sterlingsilver 925"
                       fill
                       className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
@@ -286,7 +286,7 @@ export default function RingenPage() {
                 <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
                   <div className="aspect-square relative overflow-hidden bg-white">
                     <Image
-                      src="https://afe081fed4.clvaw-cdnwnd.com/658ebfc1c006b3887df112a24a576036/200000855-b2c88b2c89/16%20ring%20zilver-0.jpeg?ph=afe081fed4"
+                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927798/ringen-17_bxymno.jpg"
                       alt="Sterlingsilver 925"
                       fill
                       className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
@@ -303,7 +303,7 @@ export default function RingenPage() {
                 <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
                   <div className="aspect-square relative overflow-hidden bg-white">
                     <Image
-                      src="https://afe081fed4.clvaw-cdnwnd.com/658ebfc1c006b3887df112a24a576036/200000859-2d97f2d982/17%20ring%20groene%20saffier-3-24%20kopie-3.jpeg?ph=afe081fed4"
+                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927798/ringen-18_vsgjk9.jpg"
                       alt="Sterlingsilver 925 met peridot"
                       fill
                       className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
@@ -346,8 +346,8 @@ export default function RingenPage() {
             <div className="md:col-span-1">
               <Link href="/">
                 <Image
-                  src="https://ext.same-assets.com/3019426010/2711449369.webp"
-                  alt="10a Juweelontwerp"
+                  src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927798/ringen-19_cgksor.png"
+                  alt="Tina Piano Juweelontwerp"
                   width={150}
                   height={30}
                   className="h-8 w-auto mb-4"

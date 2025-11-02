@@ -4,7 +4,7 @@ import Header from '../../components/Header'
 import FadeInSection from '../../components/FadeInSection'
 import ScrollToTop from '../../components/ScrollToTop'
 
-export default function BrochesPage() {
+export default function JuwelenPage() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
@@ -13,8 +13,8 @@ export default function BrochesPage() {
       {/* Hero Image */}
       <section className="relative h-[600px] lg:h-[750px] overflow-hidden">
         <Image
-          src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927760/broches-02_utjhkn.jpg"
-          alt="Broches collectie"
+          src="https://ext.same-assets.com/3019426010/688791092.webp"
+          alt="Juwelen collectie"
           fill
           className="object-cover animate-ken-burns"
         />
@@ -24,9 +24,9 @@ export default function BrochesPage() {
       <FadeInSection>
         <section className="bg-gradient-to-b from-gray-900 to-gray-800 py-20 lg:py-24">
           <div className="container mx-auto px-6 text-center">
-            <h1 className="text-4xl md:text-6xl font-light text-[#8fc0e5] mb-8 font-[family-name:var(--font-playfair)] tracking-tight">Broches</h1>
+            <h1 className="text-4xl md:text-6xl font-light text-[#8fc0e5] mb-8 font-[family-name:var(--font-playfair)] tracking-tight">Juwelen</h1>
             <p className="text-3xl md:text-4xl lg:text-5xl text-white leading-relaxed max-w-4xl mx-auto mb-10 font-light font-[family-name:var(--font-playfair)] tracking-tight" style={{ lineHeight: '1.6' }}>
-              Bent u op zoek naar broches die stijl en verfijning uitstralen? Onze collectie biedt unieke en trendy ontwerpen. Klaar om uw gepersonaliseerde broche te laten maken?
+              Ontdek onze volledige collectie handgemaakte juwelen. Van ringen tot broches, elk stuk is uniek en vervaardigd met passie.
             </p>
             <Link
               href="/contact"
@@ -38,165 +38,132 @@ export default function BrochesPage() {
         </section>
       </FadeInSection>
 
-      {/* Broches Gallery */}
+      {/* Juwelen Categories - 2 rows x 3 columns */}
       <FadeInSection delay={100}>
         <main className="py-20 lg:py-24 bg-white">
           <div className="container mx-auto px-6">
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 mb-16">
-              {/* Broche 1 */}
-              <div className="group cursor-pointer">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-16">
+              {/* Category 1 - Ringen */}
+              <Link href="/ringen" className="group cursor-pointer">
                 <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
                   <div className="aspect-square relative overflow-hidden bg-white">
                     <Image
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927760/broches-03_gcb4bd.jpg"
-                      alt="Geëmailleerde broche Sterlingsilver 925"
+                      src="https://ext.same-assets.com/3019426010/2649150772.webp"
+                      alt="Ringen"
                       fill
-                      className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                   </div>
                   <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Geëmailleerde broche Sterlingsilver 925</p>
+                    <h3 className="text-white font-medium text-center uppercase tracking-wide text-lg">Ringen</h3>
                   </div>
                 </div>
-              </div>
+              </Link>
 
-              {/* Broche 2 */}
-              <div className="group cursor-pointer">
+              {/* Category 2 - Oorringen */}
+              <Link href="/oorringen" className="group cursor-pointer">
                 <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
                   <div className="aspect-square relative overflow-hidden bg-white">
                     <Image
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927760/broches-04_thzzcj.jpg"
-                      alt="Geëmailleerde broche Sterlingsilver 925"
+                      src="https://ext.same-assets.com/3019426010/1871366328.webp"
+                      alt="Oorringen"
                       fill
-                      className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                   </div>
                   <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Geëmailleerde broche Sterlingsilver 925</p>
+                    <h3 className="text-white font-medium text-center uppercase tracking-wide text-lg">Oorringen</h3>
                   </div>
                 </div>
-              </div>
+              </Link>
 
-              {/* Broche 3 */}
-              <div className="group cursor-pointer">
+              {/* Category 3 - Mannen */}
+              <Link href="/mannen" className="group cursor-pointer">
                 <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
                   <div className="aspect-square relative overflow-hidden bg-white">
                     <Image
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927760/broches-05_tgbiz5.jpg"
-                      alt="Geëmailleerde broche Sterlingsilver 925"
+                      src="https://ext.same-assets.com/3019426010/1065727544.webp"
+                      alt="Mannen"
                       fill
-                      className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                   </div>
                   <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Geëmailleerde broche Sterlingsilver 925</p>
+                    <h3 className="text-white font-medium text-center uppercase tracking-wide text-lg">Mannen</h3>
                   </div>
                 </div>
-              </div>
+              </Link>
 
-              {/* Broche 4 */}
-              <div className="group cursor-pointer">
+              {/* Category 4 - Halskettingen */}
+              <Link href="/halskettingen" className="group cursor-pointer">
                 <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
                   <div className="aspect-square relative overflow-hidden bg-white">
                     <Image
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927761/broches-06_zn2gne.jpg"
-                      alt="Geëmailleerde broche Sterlingsilver 925"
+                      src="https://ext.same-assets.com/3019426010/1072932616.webp"
+                      alt="Halskettingen"
                       fill
-                      className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                   </div>
                   <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Geëmailleerde broche Sterlingsilver 925</p>
+                    <h3 className="text-white font-medium text-center uppercase tracking-wide text-lg">Halskettingen</h3>
                   </div>
                 </div>
-              </div>
+              </Link>
 
-              {/* Broche 5 */}
-              <div className="group cursor-pointer">
+              {/* Category 5 - Armbanden */}
+              <Link href="/armbanden" className="group cursor-pointer">
                 <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
                   <div className="aspect-square relative overflow-hidden bg-white">
                     <Image
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927761/broches-07_wmnccm.png"
-                      alt="Geëmailleerde broche Sterlingsilver 925"
+                      src="https://ext.same-assets.com/3019426010/2462445221.webp"
+                      alt="Armbanden"
                       fill
-                      className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      style={{ objectPosition: '50% 50%' }}
                     />
                   </div>
                   <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Geëmailleerde broche Sterlingsilver 925</p>
+                    <h3 className="text-white font-medium text-center uppercase tracking-wide text-lg">Armbanden</h3>
                   </div>
                 </div>
-              </div>
+              </Link>
 
-              {/* Broche 6 */}
-              <div className="group cursor-pointer">
+              {/* Category 6 - Broches */}
+              <Link href="/broches" className="group cursor-pointer">
                 <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
                   <div className="aspect-square relative overflow-hidden bg-white">
                     <Image
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927761/broches-08_hpumcc.jpg"
-                      alt="Geëmailleerde broche Sterlingsilver 925"
+                      src="https://ext.same-assets.com/3019426010/1792438925.webp"
+                      alt="Broches"
                       fill
-                      className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                   </div>
                   <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Geëmailleerde broche Sterlingsilver 925</p>
+                    <h3 className="text-white font-medium text-center uppercase tracking-wide text-lg">Broches</h3>
                   </div>
                 </div>
-              </div>
-
-              {/* Broche 7 */}
-              <div className="group cursor-pointer">
-                <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
-                  <div className="aspect-square relative overflow-hidden bg-white">
-                    <Image
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927762/broches-09_ihj9nl.jpg"
-                      alt="Geëmailleerde broche Sterlingsilver 925"
-                      fill
-                      className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
-                    />
-                  </div>
-                  <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Geëmailleerde broche Sterlingsilver 925</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Broche 8 */}
-              <div className="group cursor-pointer">
-                <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
-                  <div className="aspect-square relative overflow-hidden bg-white">
-                    <Image
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927765/broches-10_dir6c3.jpg"
-                      alt="Geëmailleerde broche Sterlingsilver 925"
-                      fill
-                      className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
-                    />
-                  </div>
-                  <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Geëmailleerde broche Sterlingsilver 925</p>
-                  </div>
-                </div>
-              </div>
+              </Link>
             </div>
           </div>
         </main>
       </FadeInSection>
 
-      {/* Custom Broche Section */}
+      {/* Custom Jewelry Section */}
       <FadeInSection delay={200}>
         <section className="bg-gradient-to-b from-gray-800 to-gray-900 py-20 lg:py-24">
           <div className="container mx-auto px-6">
             <div className="text-center max-w-4xl mx-auto">
-              <h2 className="text-4xl md:text-5xl font-light text-[#8fc0e5] mb-8 font-[family-name:var(--font-playfair)] tracking-tight">Op zoek naar een unieke broche?</h2>
+              <h2 className="text-4xl md:text-5xl font-light text-[#8fc0e5] mb-8 font-[family-name:var(--font-playfair)] tracking-tight">Ontwerp de juwelen van uw dromen</h2>
               <p className="text-3xl md:text-4xl lg:text-5xl text-white leading-relaxed mb-10 font-light font-[family-name:var(--font-playfair)] tracking-tight" style={{ lineHeight: '1.6' }}>
-                Laat ons uw droombroche ontwerpen en maken. Elk stuk wordt speciaal voor u gemaakt, afgestemd op uw persoonlijke smaak en wensen.
+                Wij realiseren uw visie
               </p>
               <Link
                 href="/contact"
                 className="inline-block bg-[#8fc0e5] text-white px-8 py-4 rounded-md font-medium hover:bg-[#7ab0d8] hover:shadow-xl transition-all duration-300 hover:scale-105 uppercase text-xl"
               >
-                Contacteer ons voor een ontwerp
+                Contacteer ons
               </Link>
             </div>
           </div>
@@ -237,7 +204,7 @@ export default function BrochesPage() {
                 <li><Link href="/mannen" className="text-[#8fc0e5] hover:underline">Mannen</Link></li>
                 <li><Link href="/halskettingen" className="text-[#8fc0e5] hover:underline">Halskettingen</Link></li>
                 <li><Link href="/armbanden" className="text-[#8fc0e5] hover:underline">Armbanden</Link></li>
-                <li><Link href="/broches" className="text-[#8fc0e5] hover:underline font-medium">Broches</Link></li>
+                <li><Link href="/broches" className="text-[#8fc0e5] hover:underline">Broches</Link></li>
               </ul>
             </div>
 

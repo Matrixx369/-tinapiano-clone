@@ -25,10 +25,10 @@ export default function Header() {
           <nav className="hidden md:flex items-center space-x-6">
             <Link href="/" className="text-[#8fc0e5] font-medium text-sm">WELKOM</Link>
             <div className="relative group">
-              <button className="flex items-center space-x-1 text-gray-700 hover:text-[#8fc0e5] font-medium text-sm">
+              <Link href="/juwelen" className="flex items-center space-x-1 text-gray-700 hover:text-[#8fc0e5] font-medium text-sm">
                 <span>JUWELEN</span>
                 <ChevronDown className="w-4 h-4" />
-              </button>
+              </Link>
               <div className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                 <div className="py-2">
                   <Link href="/ringen" className="block px-4 py-2 text-gray-700 hover:bg-gray-50 text-sm">Ringen</Link>

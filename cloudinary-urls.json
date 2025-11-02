@@ -1,0 +1,42 @@
+[
+  {
+    "description": "Juwelen Page - Hero Image",
+    "cloudinaryName": "juwelen-hero",
+    "url": "https://res.cloudinary.com/dfdlwn49l/image/upload/v1761934142/juwelen-hero.jpg"
+  },
+  {
+    "description": "Category 1 - Ringen",
+    "cloudinaryName": "juwelen-category-ringen",
+    "url": "https://res.cloudinary.com/dfdlwn49l/image/upload/v1761934142/juwelen-category-ringen.jpg"
+  },
+  {
+    "description": "Category 2 - Oorringen",
+    "cloudinaryName": "juwelen-category-oorringen",
+    "url": "https://res.cloudinary.com/dfdlwn49l/image/upload/v1761934143/juwelen-category-oorringen.jpg"
+  },
+  {
+    "description": "Category 3 - Mannen",
+    "cloudinaryName": "juwelen-category-mannen",
+    "url": "https://res.cloudinary.com/dfdlwn49l/image/upload/v1761934144/juwelen-category-mannen.jpg"
+  },
+  {
+    "description": "Category 4 - Halskettingen",
+    "cloudinaryName": "juwelen-category-halskettingen",
+    "url": "https://res.cloudinary.com/dfdlwn49l/image/upload/v1761934144/juwelen-category-halskettingen.jpg"
+  },
+  {
+    "description": "Category 5 - Armbanden",
+    "cloudinaryName": "juwelen-category-armbanden",
+    "url": "https://res.cloudinary.com/dfdlwn49l/image/upload/v1761934145/juwelen-category-armbanden.jpg"
+  },
+  {
+    "description": "Category 6 - Broches",
+    "cloudinaryName": "juwelen-category-broches",
+    "url": "https://res.cloudinary.com/dfdlwn49l/image/upload/v1761934146/juwelen-category-broches.jpg"
+  },
+  {
+    "description": "Logo",
+    "cloudinaryName": "juwelen-logo",
+    "url": "https://res.cloudinary.com/dfdlwn49l/image/upload/v1761934147/juwelen-logo.jpg"
+  }
+]

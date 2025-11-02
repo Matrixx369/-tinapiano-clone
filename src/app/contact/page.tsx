@@ -4,7 +4,7 @@ import Header from '../../components/Header'
 import FadeInSection from '../../components/FadeInSection'
 import ScrollToTop from '../../components/ScrollToTop'
 
-export default function OverMijPage() {
+export default function ContactPage() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
@@ -14,49 +14,81 @@ export default function OverMijPage() {
       <FadeInSection>
         <section className="bg-white py-16 lg:py-20">
           <div className="container mx-auto px-6">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-[#8fc0e5] text-center font-[family-name:var(--font-playfair)] tracking-tight mb-4">Over mij</h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-[#8fc0e5] text-center font-[family-name:var(--font-playfair)] tracking-tight mb-4">Contact</h1>
           </div>
         </section>
       </FadeInSection>
 
-      {/* About Content - Left Image, Right Text */}
+      {/* Contact Content */}
       <FadeInSection delay={100}>
         <section className="py-20 lg:py-24 bg-white">
           <div className="container mx-auto px-6">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start lg:items-center">
-              {/* Left - Image */}
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl w-full max-w-md ml-auto" style={{ aspectRatio: '3/4' }}>
-                <Image
-                  src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927801/over-mij-02_pk4tcu.jpg"
-                  alt="Tina Piano - Goudsmid en juweelontwerper"
-                  fill
-                  className="object-cover"
-                />
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+              {/* Left - Contact Info */}
+              <div>
+                <h2 className="text-2xl md:text-3xl font-light text-[#8fc0e5] mb-8 font-[family-name:var(--font-playfair)]">Laat een bericht achter</h2>
+                
+                <div className="space-y-6 mb-12">
+                  <p className="text-gray-700 leading-relaxed">
+                    Heb je interesse in één van deze juwelen? Of wil je een babbel over een juweel met een sterke identiteit voor jou of iemand die een warme plek in je hart heeft?
+                  </p>
+
+                  <div>
+                    <p className="text-gray-600 mb-2">E-mailadres: <a href="mailto:info@tinapiano.be" className="text-[#8fc0e5] hover:underline font-medium">info@tinapiano.be</a></p>
+                    <p className="text-gray-600">Telefoonnummer: <a href="tel:+32488893408" className="text-[#8fc0e5] hover:underline font-medium">+32 488 89 34 08</a></p>
+                  </div>
+                </div>
               </div>
 
-              {/* Right - Text */}
-              <div className="flex flex-col justify-center pl-6">
-                <h2 className="text-4xl md:text-5xl font-light text-[#8fc0e5] mb-10 font-[family-name:var(--font-playfair)]">Tina Piano</h2>
-                
-                <div className="space-y-6 mb-10">
-                  <p className="text-gray-700 leading-relaxed text-lg">
-                    De roots van Tina Piano liggen in het wondermooie Abruzzo in Italië maar haar levensloop speelt zich af in België. De fascinatie voor het kunstzinnige, de magische aantrekkingskracht tot de schoonheid van natuur, dingen en gebouwen, zijn al op prille leeftijd aanwezig. Net zoals de drang om die vast te leggen voor de eeuwigheid.
-                  </p>
-                  
-                  <p className="text-gray-700 leading-relaxed text-lg">
-                    Na een lange carrière in de fotografie, volgt Tina haar hart en haar grote passie: het ontwerpen en maken van juwelen. Ze voltooide achtereenvolgens een opleiding edelsmeden en specialisatie juweelontwerpen aan de kunstacademie Haspengouw in Sint-Truiden en wijdt zich nu met volle overgave aan de juweelkunst. Ieder sieraad van haar hand reflecteert haar visie op schoonheid en de wil om daar zelf iets aan bij te dragen. Duurzaam, vanuit een kleinschalige lokale gedachte. Maar met grensverleggende stukken als resultaat.
-                  </p>
-                </div>
+              {/* Right - Contact Form */}
+              <div>
+                <form className="space-y-6">
+                  {/* Name Field */}
+                  <div>
+                    <label htmlFor="name" className="block text-gray-700 font-medium mb-2">Uw naam *</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#8fc0e5]"
+                      placeholder=""
+                    />
+                  </div>
 
-                {/* CTA Button */}
-                <div>
-                  <Link
-                    href="/contact"
-                    className="inline-block bg-[#8fc0e5] text-white px-10 py-4 rounded-md font-semibold hover:bg-[#7ab0d8] hover:shadow-xl transition-all duration-300 hover:scale-105 uppercase tracking-wide text-base"
+                  {/* Email Field */}
+                  <div>
+                    <label htmlFor="email" className="block text-gray-700 font-medium mb-2">E-mailadres *</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#8fc0e5]"
+                      placeholder=""
+                    />
+                  </div>
+
+                  {/* Message Field */}
+                  <div>
+                    <label htmlFor="message" className="block text-gray-700 font-medium mb-2">Bericht</label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows={6}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#8fc0e5]"
+                      placeholder=""
+                    ></textarea>
+                  </div>
+
+                  {/* Submit Button */}
+                  <button
+                    type="submit"
+                    className="w-full bg-[#8fc0e5] text-white px-8 py-3 rounded-md font-medium hover:bg-[#7ab0d8] transition-all duration-300 hover:shadow-xl uppercase text-lg"
                   >
-                    Contacteer ons
-                  </Link>
-                </div>
+                    Verzenden
+                  </button>
+                </form>
               </div>
             </div>
           </div>

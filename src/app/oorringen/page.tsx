@@ -12,11 +12,11 @@ export default function OorringenPage() {
 
       {/* Hero Image */}
       <section className="relative h-[600px] lg:h-[750px] overflow-hidden">
-        <img
-          src="https://res.cloudinary.com/dfdlwn49l/image/upload/handgemaakte-juwelen-belgie/handgemaakte-oorringen-limburg/oorringen-01.png"
+        <Image
+          src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927778/oorringen-02_fq0gdb.jpg"
           alt="Oorringen collectie"
-          className="w-full h-full object-cover animate-ken-burns"
-          style={{ objectPosition: 'center 35%' }}
+          fill
+          className="object-cover animate-ken-burns"
         />
       </section>
 
@@ -26,7 +26,7 @@ export default function OorringenPage() {
           <div className="container mx-auto px-6 text-center">
             <h1 className="text-4xl md:text-6xl font-light text-[#8fc0e5] mb-8 font-[family-name:var(--font-playfair)] tracking-tight">Oorringen</h1>
             <p className="text-3xl md:text-4xl lg:text-5xl text-white leading-relaxed max-w-4xl mx-auto mb-10 font-light font-[family-name:var(--font-playfair)] tracking-tight" style={{ lineHeight: '1.6' }}>
-              Bent u op zoek naar handgemaakte oorringen die stijl en verfijning uitstralen? Onze collectie biedt unieke en trendy ontwerpen. Klaar om uw gepersonaliseerde oorringen te laten maken?
+              Bent u op zoek naar oorringen die stijl en verfijning uitstralen? Onze collectie biedt unieke en trendy ontwerpen. Klaar om uw gepersonaliseerde oorringen te laten maken?
             </p>
             <Link
               href="/contact"
@@ -38,311 +38,245 @@ export default function OorringenPage() {
         </section>
       </FadeInSection>
 
-      {/* Earring Gallery - EXACT RINGEN STRUCTURE */}
+      {/* Earrings Gallery */}
       <FadeInSection delay={100}>
         <main className="py-20 lg:py-24 bg-white">
           <div className="container mx-auto px-6">
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 mb-16">
-              {/* Earring 1 */}
+              {/* Oorringen 1 */}
               <div className="group cursor-pointer">
                 <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
                   <div className="aspect-square relative overflow-hidden bg-white">
-                    <img
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/handgemaakte-juwelen-belgie/handgemaakte-oorringen-limburg/oorringen-01.png"
-                      alt="Handgemaakte oorbellen 1"
-                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 p-4"
+                    <Image
+                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927778/oorringen-03_cr1a7m.jpg"
+                      alt="Geelgoud 18K"
+                      fill
+                      className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
                     />
                   </div>
                   <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Handgemaakte oorbellen</p>
+                    <p className="text-white text-sm text-center truncate px-2">Geelgoud 18K</p>
                   </div>
                 </div>
               </div>
 
-              {/* Earring 2 */}
+              {/* Oorringen 2 */}
               <div className="group cursor-pointer">
                 <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
                   <div className="aspect-square relative overflow-hidden bg-white">
-                    <img
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/handgemaakte-juwelen-belgie/handgemaakte-oorringen-limburg/oorringen-02.jpeg"
-                      alt="Handgemaakte oorbellen 2"
-                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 p-4"
+                    <Image
+                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927780/oorringen-04_xqsse4.jpg"
+                      alt="Sterlingsilver 925 met aquamarijn"
+                      fill
+                      className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
                     />
                   </div>
                   <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Handgemaakte oorbellen</p>
+                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925 met aquamarijn</p>
                   </div>
                 </div>
               </div>
 
-              {/* Earring 3 */}
+              {/* Oorringen 3 */}
               <div className="group cursor-pointer">
                 <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
                   <div className="aspect-square relative overflow-hidden bg-white">
-                    <img
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/handgemaakte-juwelen-belgie/handgemaakte-oorringen-limburg/oorringen-03.jpeg"
-                      alt="Handgemaakte oorbellen 3"
-                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 p-4"
+                    <Image
+                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927780/oorringen-05_e6m6d9.jpg"
+                      alt="Witgoud 18K met saffier"
+                      fill
+                      className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
                     />
                   </div>
                   <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Handgemaakte oorbellen</p>
+                    <p className="text-white text-sm text-center truncate px-2">Witgoud 18K met saffier</p>
                   </div>
                 </div>
               </div>
 
-              {/* Earring 4 */}
+              {/* Oorringen 4 */}
               <div className="group cursor-pointer">
                 <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
                   <div className="aspect-square relative overflow-hidden bg-white">
-                    <img
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/handgemaakte-juwelen-belgie/handgemaakte-oorringen-limburg/oorringen-04.jpeg"
-                      alt="Handgemaakte oorbellen 4"
-                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 p-4"
+                    <Image
+                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927780/oorringen-06_qslzns.jpg"
+                      alt="Sterlingsilver 925"
+                      fill
+                      className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
                     />
                   </div>
                   <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Handgemaakte oorbellen</p>
+                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925</p>
                   </div>
                 </div>
               </div>
 
-              {/* Earring 5 */}
+              {/* Oorringen 5 */}
               <div className="group cursor-pointer">
                 <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
                   <div className="aspect-square relative overflow-hidden bg-white">
-                    <img
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/handgemaakte-juwelen-belgie/handgemaakte-oorringen-limburg/oorringen-05.jpeg"
-                      alt="Handgemaakte oorbellen 5"
-                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 p-4"
+                    <Image
+                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927785/oorringen-07_aitmoj.jpg"
+                      alt="Geelgoud 18K"
+                      fill
+                      className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
                     />
                   </div>
                   <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Handgemaakte oorbellen</p>
+                    <p className="text-white text-sm text-center truncate px-2">Geelgoud 18K</p>
                   </div>
                 </div>
               </div>
 
-              {/* Earring 6 */}
+              {/* Oorringen 6 */}
               <div className="group cursor-pointer">
                 <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
                   <div className="aspect-square relative overflow-hidden bg-white">
-                    <img
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/handgemaakte-juwelen-belgie/handgemaakte-oorringen-limburg/oorringen-06.jpeg"
-                      alt="Handgemaakte oorbellen 6"
-                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 p-4"
+                    <Image
+                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927786/oorringen-08_jinj5h.jpg"
+                      alt="Sterlingsilver 925"
+                      fill
+                      className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
                     />
                   </div>
                   <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Handgemaakte oorbellen</p>
+                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925</p>
                   </div>
                 </div>
               </div>
 
-              {/* Earring 7 */}
+              {/* Oorringen 7 */}
               <div className="group cursor-pointer">
                 <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
                   <div className="aspect-square relative overflow-hidden bg-white">
-                    <img
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/handgemaakte-juwelen-belgie/handgemaakte-oorringen-limburg/oorringen-07.jpeg"
-                      alt="Handgemaakte oorbellen 7"
-                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 p-4"
+                    <Image
+                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927786/oorringen-09_fndb1h.jpg"
+                      alt="Sterlingsilver 925"
+                      fill
+                      className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
                     />
                   </div>
                   <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Handgemaakte oorbellen</p>
+                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925</p>
                   </div>
                 </div>
               </div>
 
-              {/* Earring 8 */}
+              {/* Oorringen 8 */}
               <div className="group cursor-pointer">
                 <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
                   <div className="aspect-square relative overflow-hidden bg-white">
-                    <img
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/handgemaakte-juwelen-belgie/handgemaakte-oorringen-limburg/oorringen-08.jpeg"
-                      alt="Handgemaakte oorbellen 8"
-                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 p-4"
+                    <Image
+                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927786/oorringen-10_jx31ct.jpg"
+                      alt="Sterlingsilver 925"
+                      fill
+                      className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
                     />
                   </div>
                   <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Handgemaakte oorbellen</p>
+                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925</p>
                   </div>
                 </div>
               </div>
 
-              {/* Earring 9 */}
+              {/* Oorringen 9 */}
               <div className="group cursor-pointer">
                 <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
                   <div className="aspect-square relative overflow-hidden bg-white">
-                    <img
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/handgemaakte-juwelen-belgie/handgemaakte-oorringen-limburg/oorringen-09.jpeg"
-                      alt="Handgemaakte oorbellen 9"
-                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 p-4"
+                    <Image
+                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927786/oorringen-11_jkaezi.jpg"
+                      alt="Sterlingsilver 925"
+                      fill
+                      className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
                     />
                   </div>
                   <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Handgemaakte oorbellen</p>
+                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925</p>
                   </div>
                 </div>
               </div>
 
-              {/* Earring 10 */}
+              {/* Oorringen 10 */}
               <div className="group cursor-pointer">
                 <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
                   <div className="aspect-square relative overflow-hidden bg-white">
-                    <img
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/handgemaakte-juwelen-belgie/handgemaakte-oorringen-limburg/oorringen-10.jpeg"
-                      alt="Handgemaakte oorbellen 10"
-                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 p-4"
+                    <Image
+                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927786/oorringen-12_pgqxvo.jpg"
+                      alt="Sterlingsilver 925 met natuurparels en barokparels"
+                      fill
+                      className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
                     />
                   </div>
                   <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Handgemaakte oorbellen</p>
+                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925 met natuurparels en barokparels</p>
                   </div>
                 </div>
               </div>
 
-              {/* Earring 11 */}
+              {/* Oorringen 11 */}
               <div className="group cursor-pointer">
                 <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
                   <div className="aspect-square relative overflow-hidden bg-white">
-                    <img
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/handgemaakte-juwelen-belgie/handgemaakte-oorringen-limburg/oorringen-11.jpeg"
-                      alt="Handgemaakte oorbellen 11"
-                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 p-4"
+                    <Image
+                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927786/oorringen-13_vv4l2a.jpg"
+                      alt="Verguld 18K Sterlingsilver 925"
+                      fill
+                      className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
                     />
                   </div>
                   <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Handgemaakte oorbellen</p>
+                    <p className="text-white text-sm text-center truncate px-2">Verguld 18K Sterlingsilver 925</p>
                   </div>
                 </div>
               </div>
 
-              {/* Earring 12 */}
+              {/* Oorringen 12 */}
               <div className="group cursor-pointer">
                 <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
                   <div className="aspect-square relative overflow-hidden bg-white">
-                    <img
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/handgemaakte-juwelen-belgie/handgemaakte-oorringen-limburg/oorringen-12.jpeg"
-                      alt="Handgemaakte oorbellen 12"
-                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 p-4"
+                    <Image
+                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927787/oorringen-14_hqfwjt.jpg"
+                      alt="Sterlingsilver 925 met tanzanite"
+                      fill
+                      className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
                     />
                   </div>
                   <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Handgemaakte oorbellen</p>
+                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925 met tanzanite</p>
                   </div>
                 </div>
               </div>
 
-              {/* Earring 13 */}
+              {/* Oorringen 13 */}
               <div className="group cursor-pointer">
                 <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
                   <div className="aspect-square relative overflow-hidden bg-white">
-                    <img
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/handgemaakte-juwelen-belgie/handgemaakte-oorringen-limburg/oorringen-13.jpeg"
-                      alt="Handgemaakte oorbellen 13"
-                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 p-4"
+                    <Image
+                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927787/oorringen-15_e6mbdo.jpg"
+                      alt="Sterlingsilver 925"
+                      fill
+                      className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
                     />
                   </div>
                   <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Handgemaakte oorbellen</p>
+                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925</p>
                   </div>
                 </div>
               </div>
 
-              {/* Earring 14 */}
+              {/* Oorringen 14 */}
               <div className="group cursor-pointer">
                 <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
                   <div className="aspect-square relative overflow-hidden bg-white">
-                    <img
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/handgemaakte-juwelen-belgie/handgemaakte-oorringen-limburg/oorringen-14.jpeg"
-                      alt="Handgemaakte oorbellen 14"
-                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 p-4"
+                    <Image
+                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927787/oorringen-16_roz0xm.jpg"
+                      alt="Sterlingsilver 925"
+                      fill
+                      className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
                     />
                   </div>
                   <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Handgemaakte oorbellen</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Earring 15 */}
-              <div className="group cursor-pointer">
-                <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
-                  <div className="aspect-square relative overflow-hidden bg-white">
-                    <img
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/handgemaakte-juwelen-belgie/handgemaakte-oorringen-limburg/oorringen-15.jpeg"
-                      alt="Handgemaakte oorbellen 15"
-                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 p-4"
-                    />
-                  </div>
-                  <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Handgemaakte oorbellen</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Earring 16 */}
-              <div className="group cursor-pointer">
-                <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
-                  <div className="aspect-square relative overflow-hidden bg-white">
-                    <img
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/handgemaakte-juwelen-belgie/handgemaakte-oorringen-limburg/oorringen-16.jpeg"
-                      alt="Handgemaakte oorbellen 16"
-                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 p-4"
-                    />
-                  </div>
-                  <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Handgemaakte oorbellen</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Earring 17 */}
-              <div className="group cursor-pointer">
-                <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
-                  <div className="aspect-square relative overflow-hidden bg-white">
-                    <img
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/handgemaakte-juwelen-belgie/handgemaakte-oorringen-limburg/oorringen-17.jpeg"
-                      alt="Handgemaakte oorbellen 17"
-                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 p-4"
-                    />
-                  </div>
-                  <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Handgemaakte oorbellen</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Earring 18 */}
-              <div className="group cursor-pointer">
-                <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
-                  <div className="aspect-square relative overflow-hidden bg-white">
-                    <img
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/handgemaakte-juwelen-belgie/handgemaakte-oorringen-limburg/oorringen-18.jpeg"
-                      alt="Handgemaakte oorbellen 18"
-                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 p-4"
-                    />
-                  </div>
-                  <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Handgemaakte oorbellen</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Earring 19 */}
-              <div className="group cursor-pointer">
-                <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
-                  <div className="aspect-square relative overflow-hidden bg-white">
-                    <img
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/handgemaakte-juwelen-belgie/handgemaakte-oorringen-limburg/oorringen-19.png"
-                      alt="Handgemaakte oorbellen 19"
-                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 p-4"
-                    />
-                  </div>
-                  <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Handgemaakte oorbellen</p>
+                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925</p>
                   </div>
                 </div>
               </div>
@@ -351,14 +285,14 @@ export default function OorringenPage() {
         </main>
       </FadeInSection>
 
-      {/* Custom Earring Section */}
+      {/* Custom Earrings Section */}
       <FadeInSection delay={200}>
         <section className="bg-gradient-to-b from-gray-800 to-gray-900 py-20 lg:py-24">
           <div className="container mx-auto px-6">
             <div className="text-center max-w-4xl mx-auto">
               <h2 className="text-4xl md:text-5xl font-light text-[#8fc0e5] mb-8 font-[family-name:var(--font-playfair)] tracking-tight">Op zoek naar unieke oorringen?</h2>
               <p className="text-3xl md:text-4xl lg:text-5xl text-white leading-relaxed mb-10 font-light font-[family-name:var(--font-playfair)] tracking-tight" style={{ lineHeight: '1.6' }}>
-                Laat ons uw droomoorbellen ontwerpen en maken. Elk stuk wordt speciaal voor u gemaakt, afgestemd op uw persoonlijke smaak en wensen.
+                Laat ons uw droomsieraden ontwerpen en maken. Elk stuk wordt speciaal voor u gemaakt, afgestemd op uw persoonlijke smaak en wensen.
               </p>
               <Link
                 href="/contact"
@@ -378,8 +312,8 @@ export default function OorringenPage() {
             <div className="md:col-span-1">
               <Link href="/">
                 <Image
-                  src="https://ext.same-assets.com/3019426010/2711449369.webp"
-                  alt="10a Juweelontwerp"
+                  src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927778/oorringen-01_zphhel.png"
+                  alt="Tina Piano Juweelontwerp"
                   width={150}
                   height={30}
                   className="h-8 w-auto mb-4"
@@ -400,8 +334,8 @@ export default function OorringenPage() {
             <div>
               <h3 className="text-lg font-semibold text-gray-800 mb-4">Juwelen</h3>
               <ul className="space-y-2">
-                <li><Link href="/ringen" className="text-[#8fc0e5] hover:underline font-medium">Ringen</Link></li>
-                <li><Link href="/oorringen" className="text-[#8fc0e5] hover:underline">Oorringen</Link></li>
+                <li><Link href="/ringen" className="text-[#8fc0e5] hover:underline">Ringen</Link></li>
+                <li><Link href="/oorringen" className="text-[#8fc0e5] hover:underline font-medium">Oorringen</Link></li>
                 <li><Link href="/mannen" className="text-[#8fc0e5] hover:underline">Mannen</Link></li>
                 <li><Link href="/halskettingen" className="text-[#8fc0e5] hover:underline">Halskettingen</Link></li>
                 <li><Link href="/armbanden" className="text-[#8fc0e5] hover:underline">Armbanden</Link></li>

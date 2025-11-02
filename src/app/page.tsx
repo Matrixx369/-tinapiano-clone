@@ -13,7 +13,7 @@ export default function Home() {
       {/* Hero Image Only */}
       <section className="relative h-[600px] lg:h-[750px] overflow-hidden">
         <Image
-          src="https://ext.same-assets.com/3019426010/688791092.webp"
+          src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927799/homepage-02_z4eo3o.jpg"
           alt="Handgemaakte juwelen"
           fill
           className="object-cover animate-ken-burns"
@@ -46,8 +46,8 @@ export default function Home() {
             <div className="flex flex-col md:flex-row items-center gap-16">
               <div className="md:w-1/2">
                 <Image
-                  src="https://afe081fed4.clvaw-cdnwnd.com/658ebfc1c006b3887df112a24a576036/200000113-7b62a7b62b/logo-transparent.png?ph=afe081fed4"
-                  alt="10a Juweelontwerp Logo"
+                  src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927799/homepage-03_i84iuf.png"
+                  alt="Tina Piano Logo"
                   width={300}
                   height={200}
                   className="mx-auto"
@@ -79,7 +79,7 @@ export default function Home() {
               <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-3 hover:scale-105">
                 <div className="aspect-square relative overflow-hidden">
                   <Image
-                    src="https://ext.same-assets.com/3019426010/2649150772.webp"
+                    src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927799/homepage-04_frlspc.jpg"
                     alt="Ringen"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
@@ -95,7 +95,7 @@ export default function Home() {
               <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-3 hover:scale-105">
                 <div className="aspect-square relative overflow-hidden">
                   <Image
-                    src="https://ext.same-assets.com/3019426010/1871366328.webp"
+                    src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927799/homepage-05_fgie18.jpg"
                     alt="Oorringen"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
@@ -111,7 +111,7 @@ export default function Home() {
               <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-3 hover:scale-105">
                 <div className="aspect-square relative overflow-hidden">
                   <Image
-                    src="https://ext.same-assets.com/3019426010/1072932616.webp"
+                    src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927799/homepage-06_ustjnm.jpg"
                     alt="Halsjuwelen"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
@@ -127,7 +127,7 @@ export default function Home() {
               <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-3 hover:scale-105">
                 <div className="aspect-square relative overflow-hidden">
                   <Image
-                    src="https://ext.same-assets.com/3019426010/2462445221.webp"
+                    src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927799/homepage-07_tg6rve.jpg"
                     alt="Armbanden"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
@@ -143,7 +143,7 @@ export default function Home() {
               <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-3 hover:scale-105">
                 <div className="aspect-square relative overflow-hidden">
                   <Image
-                    src="https://ext.same-assets.com/3019426010/1792438925.webp"
+                    src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927800/homepage-08_r25pdt.jpg"
                     alt="Broches"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
@@ -166,7 +166,7 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row items-center gap-16">
             <div className="lg:w-1/2">
               <Image
-                src="https://ext.same-assets.com/3019426010/3179136517.webp"
+                src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927800/homepage-09_owphnz.jpg"
                 alt="Juwelen op maat"
                 width={600}
                 height={500}
@@ -197,7 +197,7 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row-reverse items-center gap-16">
             <div className="lg:w-1/2">
               <Image
-                src="https://ext.same-assets.com/3019426010/1065727544.webp"
+                src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927800/homepage-10_vpw3mz.jpg"
                 alt="Herenjuwelen"
                 width={600}
                 height={500}
@@ -225,7 +225,7 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row items-center gap-16">
             <div className="lg:w-1/2">
               <Image
-                src="https://ext.same-assets.com/3019426010/4016404978.webp"
+                src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927800/homepage-11_euosta.jpg"
                 alt="Herontwerpen"
                 width={600}
                 height={500}
@@ -250,15 +250,15 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row-reverse items-center gap-16">
             <div className="lg:w-1/2">
               <Image
-                src="https://ext.same-assets.com/3019426010/36370026.webp"
-                alt="Reparatie"
+                src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927800/homepage-12_lnkcri.jpg"
+                alt="Reparaties"
                 width={600}
                 height={500}
                 className="rounded-lg shadow-xl"
               />
             </div>
             <div className="lg:w-1/2">
-              <h2 className="text-4xl md:text-5xl font-light text-[#8fc0e5] mb-8 font-[family-name:var(--font-playfair)] tracking-tight">Reparatie</h2>
+              <h2 className="text-4xl md:text-5xl font-light text-[#8fc0e5] mb-8 font-[family-name:var(--font-playfair)] tracking-tight">Reparaties</h2>
               <p className="text-gray-700 text-lg leading-relaxed" style={{ lineHeight: '1.8' }}>
                 Vertrouw ons uw dierbare juwelen of gebroken parelsnoer toe aan onze reparatieservice en herontdek de schoonheid die ze ooit hadden. Neem vandaag nog contact met ons op om een afspraak te maken en uw juwelen weer te laten stralen.
               </p>
@@ -324,8 +324,8 @@ export default function Home() {
             <div className="md:col-span-1">
               <Link href="/">
                 <Image
-                  src="https://ext.same-assets.com/3019426010/2711449369.webp"
-                  alt="10a Juweelontwerp"
+                  src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927798/ringen-19_cgksor.png"
+                  alt="Tina Piano Juweelontwerp"
                   width={150}
                   height={30}
                   className="h-8 w-auto mb-4"
