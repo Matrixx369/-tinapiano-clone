@@ -11,7 +11,7 @@ export default function RingenPage() {
       <ScrollToTop />
 
       {/* Hero Image */}
-      <section className="relative h-[600px] lg:h-[750px] overflow-hidden">
+      <section className="relative h-[750px] lg:h-[900px] overflow-hidden">
         <Image
           src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927797/ringen-02_j85kck.jpg"
           alt="Ringen collectie"
