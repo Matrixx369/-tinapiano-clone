@@ -16,7 +16,7 @@ export default function RingenPage() {
           src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927797/ringen-02_j85kck.jpg"
           alt="Ringen collectie"
           fill
-          className="object-cover animate-ken-burns"
+          className="object-cover object-top"
         />
       </section>
 
@@ -25,9 +25,6 @@ export default function RingenPage() {
         <section className="bg-gradient-to-b from-gray-900 to-gray-800 py-20 lg:py-24">
           <div className="container mx-auto px-6 text-center">
             <h1 className="text-4xl md:text-6xl font-light text-[#8fc0e5] mb-8 font-[family-name:var(--font-playfair)] tracking-tight">Ringen</h1>
-            <p className="text-3xl md:text-4xl lg:text-5xl text-white leading-relaxed max-w-4xl mx-auto mb-10 font-light font-[family-name:var(--font-playfair)] tracking-tight" style={{ lineHeight: '1.6' }}>
-              Bent u op zoek naar een ring die stijl en verfijning uitstraalt? Onze collectie biedt unieke en trendy ontwerpen. Klaar om uw gepersonaliseerde ring te laten maken?
-            </p>
             <Link
               href="/contact"
               className="inline-block bg-[#8fc0e5] text-white px-8 py-4 rounded-md font-medium hover:bg-[#7ab0d8] hover:shadow-xl transition-all duration-300 hover:scale-105 uppercase text-xl"
