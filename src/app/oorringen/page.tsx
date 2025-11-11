@@ -185,13 +185,13 @@ export default function OorringenPage() {
                   <div className="aspect-square relative overflow-hidden bg-white">
                     <Image
                       src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927786/oorringen-11_jkaezi.jpg"
-                      alt="Sterlingsilver 925"
+                      alt="Witgoud 18K met natuurparels en Keshi parels"
                       fill
                       className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
                     />
                   </div>
                   <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925</p>
+                    <p className="text-white text-sm text-center truncate px-1">Witgoud 18K met natuurparels en Keshi parels</p>
                   </div>
                 </div>
               </div>
@@ -208,7 +208,7 @@ export default function OorringenPage() {
                     />
                   </div>
                   <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925 met natuurparels en barokparels</p>
+                    <p className="text-white text-sm text-center truncate px-1">925 met natuurparels en barokparels</p>
                   </div>
                 </div>
               </div>

@@ -162,19 +162,19 @@ export default function RingenPage() {
                 </div>
               </div>
 
-              {/* Ring 8 */}
+              {/* Ring 8 - SWAPPED WITH RING 12 */}
               <div className="group cursor-pointer">
                 <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
                   <div className="aspect-square relative overflow-hidden bg-white">
                     <Image
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927798/ringen-10_klwyt4.jpg"
-                      alt="Sterlingsilver 925 met aquamarijn"
+                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927798/ringen-14_aw4lgg.jpg"
+                      alt="Sterlingsilver 925 met roségoud"
                       fill
                       className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
                     />
                   </div>
                   <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925 met aquamarijn</p>
+                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925 met roségoud</p>
                   </div>
                 </div>
               </div>
@@ -230,19 +230,19 @@ export default function RingenPage() {
                 </div>
               </div>
 
-              {/* Ring 12 */}
+              {/* Ring 12 - SWAPPED WITH RING 8 */}
               <div className="group cursor-pointer">
                 <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
                   <div className="aspect-square relative overflow-hidden bg-white">
                     <Image
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927798/ringen-14_aw4lgg.jpg"
-                      alt="Sterlingsilver 925 met roségoud"
+                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927798/ringen-10_klwyt4.jpg"
+                      alt="Sterlingsilver 925 met aquamarijn"
                       fill
                       className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
                     />
                   </div>
                   <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925 met roségoud</p>
+                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925 met aquamarijn</p>
                   </div>
                 </div>
               </div>

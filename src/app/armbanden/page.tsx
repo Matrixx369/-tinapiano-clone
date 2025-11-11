@@ -66,13 +66,13 @@ export default function ArmbandenPage() {
                   <div className="aspect-square relative overflow-hidden bg-white">
                     <Image
                       src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927759/armbanden-04_vr6lz4.jpg"
-                      alt="Sterlingsilver 925"
+                      alt="Sterlingsilver 925 met lapis lazuli"
                       fill
                       className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
                     />
                   </div>
                   <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925</p>
+                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925 met lapis lazuli</p>
                   </div>
                 </div>
               </div>

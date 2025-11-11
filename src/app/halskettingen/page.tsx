@@ -41,7 +41,7 @@ export default function HalskettingenPage() {
     },
     {
       src: 'https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927771/halskettingen-10_swd4fh.jpg',
-      name: 'Sterlingsilver 925'
+      name: 'Natuurparels met wit- en geelgouden slotje'
     },
     {
       src: 'https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927772/halskettingen-11_rg6m00.jpg',
