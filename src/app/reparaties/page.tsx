@@ -11,32 +11,32 @@ export default function ReparatiesPage() {
       <ScrollToTop />
 
       {/* Hero Image */}
-      <section className="relative h-[600px] lg:h-[750px] overflow-hidden">
+      <section className="relative h-[40vh] sm:h-[70vh] md:h-[80vh] lg:h-[750px] overflow-hidden bg-gray-900">
         <Image
           src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1762021272/handgemaakte-reparatie-06_vg5dxb.jpg"
           alt="Handgemaakte juwelen reparatie service"
           fill
-          className="object-cover animate-ken-burns"
+          className="object-contain md:object-cover"
+          style={{ objectPosition: 'center top' }}
+          priority
         />
       </section>
 
       {/* Title Section with Dark Background */}
-      <FadeInSection>
-        <section className="bg-gradient-to-b from-gray-900 to-gray-800 py-20 lg:py-24">
-          <div className="container mx-auto px-6 text-center">
-            <h1 className="text-4xl md:text-6xl font-light text-[#8fc0e5] mb-8 font-[family-name:var(--font-playfair)] tracking-tight">Reparaties</h1>
-            <p className="text-3xl md:text-4xl lg:text-5xl text-white leading-relaxed max-w-4xl mx-auto mb-10 font-light font-[family-name:var(--font-playfair)] tracking-tight" style={{ lineHeight: '1.6' }}>
-              Vertrouw ons uw dierbare juwelen of gebroken parelsnoer aan onze reparatieservice en herontdek de schoonheid die ze ooit hadden.
-            </p>
-            <Link
-              href="/contact"
-              className="inline-block bg-[#8fc0e5] text-white px-8 py-4 rounded-md font-medium hover:bg-[#7ab0d8] hover:shadow-xl transition-all duration-300 hover:scale-105 uppercase text-xl"
-            >
-              Contacteer ons
-            </Link>
-          </div>
-        </section>
-      </FadeInSection>
+      <section className="bg-gradient-to-b from-gray-900 to-gray-800 py-20 lg:py-24">
+        <div className="container mx-auto px-6 text-center">
+          <h1 className="text-4xl md:text-6xl font-light text-[#8fc0e5] mb-8 font-[family-name:var(--font-playfair)] tracking-tight">Reparaties</h1>
+          <p className="text-3xl md:text-4xl lg:text-5xl text-white leading-relaxed max-w-4xl mx-auto mb-10 font-light font-[family-name:var(--font-playfair)] tracking-tight" style={{ lineHeight: '1.6' }}>
+            Vertrouw ons uw dierbare juwelen of gebroken parelsnoer aan onze reparatieservice en herontdek de schoonheid die ze ooit hadden.
+          </p>
+          <Link
+            href="/contact"
+            className="inline-block bg-[#8fc0e5] text-white px-8 py-4 rounded-md font-medium hover:bg-[#7ab0d8] hover:shadow-xl transition-all duration-300 hover:scale-105 uppercase text-xl"
+          >
+            Contacteer ons
+          </Link>
+        </div>
+      </section>
 
       {/* Services Content - Like Homepage Layout */}
       <FadeInSection delay={100}>

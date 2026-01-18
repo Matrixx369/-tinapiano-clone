@@ -26,17 +26,69 @@ export default function ContactPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
               {/* Left - Contact Info */}
               <div>
+                <h2 className="text-2xl md:text-3xl font-light text-[#8fc0e5] mb-8 font-[family-name:var(--font-playfair)]">Laat een bericht achter</h2>
+                
                 <div className="space-y-6 mb-12">
                   <p className="text-gray-700 leading-relaxed">
                     Heb je interesse in één van deze juwelen? Of wil je een babbel over een juweel met een sterke identiteit voor jou of iemand die een warme plek in je hart heeft?
                   </p>
 
                   <div>
-                    <p className="text-gray-600">
-                      Stuur ons een bericht via <a href="mailto:info@tinapiano.be" className="text-[#8fc0e5] hover:underline font-medium">info@tinapiano.be</a> of bel ons: <a href="tel:+32488893408" className="text-[#8fc0e5] hover:underline font-medium">+32 488 89 34 08</a>
-                    </p>
+                    <p className="text-gray-600 mb-2">E-mailadres: <a href="mailto:info@tinapiano.be" className="text-[#8fc0e5] hover:underline font-medium">info@tinapiano.be</a></p>
+                    <p className="text-gray-600">Telefoonnummer: <a href="tel:+32488893408" className="text-[#8fc0e5] hover:underline font-medium">+32 488 89 34 08</a></p>
                   </div>
                 </div>
+              </div>
+
+              {/* Right - Contact Form */}
+              <div>
+                <form className="space-y-6">
+                  {/* Name Field */}
+                  <div>
+                    <label htmlFor="name" className="block text-gray-700 font-medium mb-2">Uw naam *</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#8fc0e5]"
+                      placeholder=""
+                    />
+                  </div>
+
+                  {/* Email Field */}
+                  <div>
+                    <label htmlFor="email" className="block text-gray-700 font-medium mb-2">E-mailadres *</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#8fc0e5]"
+                      placeholder=""
+                    />
+                  </div>
+
+                  {/* Message Field */}
+                  <div>
+                    <label htmlFor="message" className="block text-gray-700 font-medium mb-2">Bericht</label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows={6}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#8fc0e5]"
+                      placeholder=""
+                    ></textarea>
+                  </div>
+
+                  {/* Submit Button */}
+                  <button
+                    type="submit"
+                    className="w-full bg-[#8fc0e5] text-white px-8 py-3 rounded-md font-medium hover:bg-[#7ab0d8] transition-all duration-300 hover:shadow-xl uppercase text-lg"
+                  >
+                    Verzenden
+                  </button>
+                </form>
               </div>
             </div>
           </div>

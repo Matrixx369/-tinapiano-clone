@@ -11,19 +11,19 @@ export default function Home() {
       <ScrollToTop />
 
       {/* Hero Image Only */}
-      <section className="relative h-[600px] lg:h-[750px] overflow-hidden">
+      <section className="relative h-[40vh] sm:h-[70vh] md:h-[80vh] lg:h-[750px] overflow-hidden bg-gray-900">
         <Image
           src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927799/homepage-02_z4eo3o.jpg"
           alt="Handgemaakte juwelen"
           fill
-          className="object-cover animate-ken-burns"
-          style={{ objectPosition: 'center 35%' }}
+          className="object-contain md:object-cover"
+          style={{ objectPosition: 'center top' }}
+          priority
         />
       </section>
 
       {/* Dark Text Section with Button */}
-      <FadeInSection>
-        <section className="bg-gradient-to-b from-gray-900 to-gray-800 py-20 lg:py-24">
+      <section className="bg-gradient-to-b from-gray-900 to-gray-800 py-20 lg:py-24">
           <div className="container mx-auto px-6 text-center">
             <h1 className="text-3xl md:text-4xl lg:text-5xl text-white leading-relaxed max-w-4xl mx-auto mb-10 font-[family-name:var(--font-playfair)] font-light tracking-tight" style={{ lineHeight: '1.6' }}>
               Laat uw persoonlijkheid schitteren met onze handgemaakte juwelen. 
@@ -36,8 +36,7 @@ export default function Home() {
               Blader door de creaties
             </Link>
           </div>
-        </section>
-      </FadeInSection>
+      </section>
 
       {/* About Section */}
       <FadeInSection delay={100}>
@@ -74,7 +73,7 @@ export default function Home() {
         <section className="py-20 lg:py-24 bg-gray-900">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl md:text-5xl font-light text-[#8fc0e5] text-center mb-16 font-[family-name:var(--font-playfair)] tracking-tight">Onze sieraden</h2>
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
             <Link href="/ringen" className="group cursor-pointer">
               <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-3 hover:scale-105">
                 <div className="aspect-square relative overflow-hidden">
@@ -85,8 +84,8 @@ export default function Home() {
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
-                <div className="p-5 bg-[#8fc0e5]">
-                  <h3 className="text-white font-medium text-center uppercase tracking-wide">Ringen</h3>
+                <div className="p-2 md:p-5 bg-[#8fc0e5]">
+                  <h3 className="text-white font-medium text-center uppercase text-sm md:text-base tracking-normal md:tracking-wide">Ringen</h3>
                 </div>
               </div>
             </Link>
@@ -101,8 +100,25 @@ export default function Home() {
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
-                <div className="p-5 bg-[#8fc0e5]">
-                  <h3 className="text-white font-medium text-center uppercase tracking-wide">Oorringen</h3>
+                <div className="p-2 md:p-5 bg-[#8fc0e5]">
+                  <h3 className="text-white font-medium text-center uppercase text-sm md:text-base tracking-normal md:tracking-wide">Oorringen</h3>
+                </div>
+              </div>
+            </Link>
+
+            <Link href="/mannen" className="group cursor-pointer">
+              <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-3 hover:scale-105">
+                <div className="aspect-square relative overflow-hidden">
+                  <Image
+                    src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927777/mannen-05_a8aqn3.jpg"
+                    alt="Mannen"
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    style={{ objectPosition: '50% 50%' }}
+                  />
+                </div>
+                <div className="p-2 md:p-5 bg-[#8fc0e5]">
+                  <h3 className="text-white font-medium text-center uppercase text-sm md:text-base tracking-normal md:tracking-wide">Mannen</h3>
                 </div>
               </div>
             </Link>
@@ -117,8 +133,8 @@ export default function Home() {
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
-                <div className="p-5 bg-[#8fc0e5]">
-                  <h3 className="text-white font-medium text-center uppercase tracking-wide">Halsjuwelen</h3>
+                <div className="p-2 md:p-5 bg-[#8fc0e5]">
+                  <h3 className="text-white font-medium text-center uppercase text-sm md:text-base tracking-normal md:tracking-wide">Halsjuwelen</h3>
                 </div>
               </div>
             </Link>
@@ -133,8 +149,8 @@ export default function Home() {
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
-                <div className="p-5 bg-[#8fc0e5]">
-                  <h3 className="text-white font-medium text-center uppercase tracking-wide">Armbanden</h3>
+                <div className="p-2 md:p-5 bg-[#8fc0e5]">
+                  <h3 className="text-white font-medium text-center uppercase text-sm md:text-base tracking-normal md:tracking-wide">Armbanden</h3>
                 </div>
               </div>
             </Link>
@@ -149,8 +165,8 @@ export default function Home() {
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
-                <div className="p-5 bg-[#8fc0e5]">
-                  <h3 className="text-white font-medium text-center uppercase tracking-wide">Broches</h3>
+                <div className="p-2 md:p-5 bg-[#8fc0e5]">
+                  <h3 className="text-white font-medium text-center uppercase text-sm md:text-base tracking-normal md:tracking-wide">Broches</h3>
                 </div>
               </div>
             </Link>

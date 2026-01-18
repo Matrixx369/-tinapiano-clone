@@ -63,18 +63,19 @@ export default function HalskettingenPage() {
       <ScrollToTop />
 
       {/* Hero Image */}
-      <section className="relative h-[600px] lg:h-[750px] overflow-hidden">
+      <section className="relative h-[40vh] sm:h-[70vh] md:h-[80vh] lg:h-[750px] overflow-hidden bg-gray-900">
         <Image
           src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927766/halskettingen-02_nvplfc.jpg"
           alt="Halskettingen collectie"
           fill
-          className="object-cover animate-ken-burns"
+          className="object-contain md:object-cover"
+          style={{ objectPosition: '50% 55%' }}
+          priority
         />
       </section>
 
       {/* Title Section with Dark Background */}
-      <FadeInSection>
-        <section className="bg-gradient-to-b from-gray-900 to-gray-800 py-20 lg:py-24">
+      <section className="bg-gradient-to-b from-gray-900 to-gray-800 py-20 lg:py-24">
           <div className="container mx-auto px-6 text-center">
             <h1 className="text-4xl md:text-6xl font-light text-[#8fc0e5] mb-8 font-[family-name:var(--font-playfair)] tracking-tight">Halskettingen</h1>
             <p className="text-3xl md:text-4xl lg:text-5xl text-white leading-relaxed max-w-4xl mx-auto mb-10 font-light font-[family-name:var(--font-playfair)] tracking-tight" style={{ lineHeight: '1.6' }}>
@@ -87,8 +88,7 @@ export default function HalskettingenPage() {
               Contacteer ons
             </Link>
           </div>
-        </section>
-      </FadeInSection>
+      </section>
 
       {/* Halskettingen Gallery */}
       <FadeInSection delay={100}>

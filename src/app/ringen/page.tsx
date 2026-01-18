@@ -1,8 +1,113 @@
+import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import Header from '../../components/Header'
 import FadeInSection from '../../components/FadeInSection'
 import ScrollToTop from '../../components/ScrollToTop'
+
+export const metadata: Metadata = {
+  title: 'Ringen | Tina Piano Juweelontwerp',
+  description: 'Ontdek onze unieke collectie handgemaakte ringen. Van goud tot zilver, met edelstenen en parels.',
+}
+
+const RINGS = [
+  {
+    id: 1,
+    src: 'https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927797/ringen-03_qtcbgt.jpg',
+    alt: 'Geelgoud 18K met saffier',
+    label: 'Geelgoud 18K met saffier',
+  },
+  {
+    id: 2,
+    src: 'https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927797/ringen-04_dz7ebc.jpg',
+    alt: 'Geelgoud 18K',
+    label: 'Geelgoud 18K',
+  },
+  {
+    id: 3,
+    src: 'https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927797/ringen-05_g7erv4.jpg',
+    alt: 'Sterlingsilver 925 met aquamarijn en citrine',
+    label: 'Sterlingsilver 925 met aquamarijn en citrine',
+  },
+  {
+    id: 4,
+    src: 'https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927797/ringen-06_yxeroi.jpg',
+    alt: 'Witgoud 18K met groene saffier',
+    label: 'Witgoud 18K met groene saffier',
+  },
+  {
+    id: 5,
+    src: 'https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927797/ringen-07_cbpus5.jpg',
+    alt: 'Sterlingsilver 925 met edelstenen',
+    label: 'Sterlingsilver 925 met edelstenen',
+  },
+  {
+    id: 6,
+    src: 'https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927797/ringen-08_busvyk.jpg',
+    alt: 'Sterlingsilver 925 met aquamarijn',
+    label: 'Sterlingsilver 925 met aquamarijn',
+  },
+  {
+    id: 7,
+    src: 'https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927797/ringen-09_gk85un.jpg',
+    alt: 'Sterlingsilver 925 met aquamarijn',
+    label: 'Sterlingsilver 925 met aquamarijn',
+  },
+  {
+    id: 8,
+    src: 'https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927798/ringen-14_aw4lgg.jpg',
+    alt: 'Sterlingsilver 925 met roségoud',
+    label: 'Sterlingsilver 925 met roségoud',
+  },
+  {
+    id: 9,
+    src: 'https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927797/ringen-11_pu4bu3.jpg',
+    alt: 'Sterlingsilver 925 met citrine',
+    label: 'Sterlingsilver 925 met citrine',
+  },
+  {
+    id: 10,
+    src: 'https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927798/ringen-12_sfu2hu.jpg',
+    alt: 'Sterlingsilver 925 met morganiet',
+    label: 'Sterlingsilver 925 met morganiet',
+  },
+  {
+    id: 11,
+    src: 'https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927798/ringen-13_ycgygy.jpg',
+    alt: 'Sterlingsilver 925 met aquamarijn',
+    label: 'Sterlingsilver 925 met aquamarijn',
+  },
+  {
+    id: 12,
+    src: 'https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927798/ringen-10_klwyt4.jpg',
+    alt: 'Sterlingsilver 925 met aquamarijn',
+    label: 'Sterlingsilver 925 met aquamarijn',
+  },
+  {
+    id: 13,
+    src: 'https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927798/ringen-15_pzj3sn.jpg',
+    alt: 'Sterlingsilver 925 met citrien en peridot',
+    label: 'Sterlingsilver 925 met citrien en peridot',
+  },
+  {
+    id: 14,
+    src: 'https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927798/ringen-16_higfxb.jpg',
+    alt: 'Sterlingsilver 925',
+    label: 'Sterlingsilver 925',
+  },
+  {
+    id: 15,
+    src: 'https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927798/ringen-17_bxymno.jpg',
+    alt: 'Sterlingsilver 925',
+    label: 'Sterlingsilver 925',
+  },
+  {
+    id: 16,
+    src: 'https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927798/ringen-18_vsgjk9.jpg',
+    alt: 'Sterlingsilver 925 met peridot',
+    label: 'Sterlingsilver 925 met peridot',
+  },
+]
 
 export default function RingenPage() {
   return (
@@ -11,12 +116,14 @@ export default function RingenPage() {
       <ScrollToTop />
 
       {/* Hero Image */}
-      <section className="relative h-[750px] lg:h-[900px] overflow-hidden">
+      <section className="relative h-[40vh] sm:h-[70vh] md:h-[80vh] lg:h-[750px] overflow-hidden bg-gray-900">
         <Image
           src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927797/ringen-02_j85kck.jpg"
           alt="Ringen collectie"
           fill
-          className="object-cover object-top"
+          className="object-contain md:object-cover"
+          style={{ objectPosition: '50% 44%' }}
+          priority
         />
       </section>
 
@@ -41,277 +148,25 @@ export default function RingenPage() {
         <main className="py-20 lg:py-24 bg-white">
           <div className="container mx-auto px-6">
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 mb-16">
-              {/* Ring 1 */}
-              <div className="group cursor-pointer">
-                <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
-                  <div className="aspect-square relative overflow-hidden bg-white">
-                    <Image
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927797/ringen-03_qtcbgt.jpg"
-                      alt="Geelgoud 18K met saffier"
-                      fill
-                      className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
-                    />
-                  </div>
-                  <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Geelgoud 18K met saffier</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Ring 2 */}
-              <div className="group cursor-pointer">
-                <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
-                  <div className="aspect-square relative overflow-hidden bg-white">
-                    <Image
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927797/ringen-04_dz7ebc.jpg"
-                      alt="Geelgoud 18K"
-                      fill
-                      className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
-                    />
-                  </div>
-                  <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Geelgoud 18K</p>
+              {RINGS.map((ring) => (
+                <div key={ring.id} className="group cursor-pointer">
+                  <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
+                    <div className="aspect-square relative overflow-hidden bg-white">
+                      <Image
+                        src={ring.src}
+                        alt={ring.alt}
+                        fill
+                        className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
+                      />
+                    </div>
+                    <div className="p-5 bg-[#8fc0e5]">
+                      <p className="text-white text-sm text-center truncate px-2" title={ring.label}>
+                        {ring.label}
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-
-              {/* Ring 3 */}
-              <div className="group cursor-pointer">
-                <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
-                  <div className="aspect-square relative overflow-hidden bg-white">
-                    <Image
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927797/ringen-05_g7erv4.jpg"
-                      alt="Sterlingsilver 925 met aquamarijn en citrine"
-                      fill
-                      className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
-                    />
-                  </div>
-                  <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925 met aquamarijn en citrine</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Ring 4 */}
-              <div className="group cursor-pointer">
-                <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
-                  <div className="aspect-square relative overflow-hidden bg-white">
-                    <Image
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927797/ringen-06_yxeroi.jpg"
-                      alt="Witgoud 18K met groene saffier"
-                      fill
-                      className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
-                    />
-                  </div>
-                  <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Witgoud 18K met groene saffier</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Ring 5 */}
-              <div className="group cursor-pointer">
-                <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
-                  <div className="aspect-square relative overflow-hidden bg-white">
-                    <Image
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927797/ringen-07_cbpus5.jpg"
-                      alt="Sterlingsilver 925 met edelstenen"
-                      fill
-                      className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
-                    />
-                  </div>
-                  <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925 met edelstenen</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Ring 6 */}
-              <div className="group cursor-pointer">
-                <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
-                  <div className="aspect-square relative overflow-hidden bg-white">
-                    <Image
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927797/ringen-08_busvyk.jpg"
-                      alt="Sterlingsilver 925 met aquamarijn"
-                      fill
-                      className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
-                    />
-                  </div>
-                  <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925 met aquamarijn</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Ring 7 */}
-              <div className="group cursor-pointer">
-                <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
-                  <div className="aspect-square relative overflow-hidden bg-white">
-                    <Image
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927797/ringen-09_gk85un.jpg"
-                      alt="Sterlingsilver 925 met aquamarijn"
-                      fill
-                      className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
-                    />
-                  </div>
-                  <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925 met aquamarijn</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Ring 8 - SWAPPED WITH RING 12 */}
-              <div className="group cursor-pointer">
-                <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
-                  <div className="aspect-square relative overflow-hidden bg-white">
-                    <Image
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927798/ringen-14_aw4lgg.jpg"
-                      alt="Sterlingsilver 925 met roségoud"
-                      fill
-                      className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
-                    />
-                  </div>
-                  <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925 met roségoud</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Ring 9 */}
-              <div className="group cursor-pointer">
-                <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
-                  <div className="aspect-square relative overflow-hidden bg-white">
-                    <Image
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927797/ringen-11_pu4bu3.jpg"
-                      alt="Sterlingsilver 925 met citrine"
-                      fill
-                      className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
-                    />
-                  </div>
-                  <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925 met citrine</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Ring 10 */}
-              <div className="group cursor-pointer">
-                <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
-                  <div className="aspect-square relative overflow-hidden bg-white">
-                    <Image
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927798/ringen-12_sfu2hu.jpg"
-                      alt="Sterlingsilver 925 met morganiet"
-                      fill
-                      className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
-                    />
-                  </div>
-                  <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925 met morganiet</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Ring 11 */}
-              <div className="group cursor-pointer">
-                <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
-                  <div className="aspect-square relative overflow-hidden bg-white">
-                    <Image
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927798/ringen-13_ycgygy.jpg"
-                      alt="Sterlingsilver 925 met aquamarijn"
-                      fill
-                      className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
-                    />
-                  </div>
-                  <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925 met aquamarijn</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Ring 12 - SWAPPED WITH RING 8 */}
-              <div className="group cursor-pointer">
-                <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
-                  <div className="aspect-square relative overflow-hidden bg-white">
-                    <Image
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927798/ringen-10_klwyt4.jpg"
-                      alt="Sterlingsilver 925 met aquamarijn"
-                      fill
-                      className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
-                    />
-                  </div>
-                  <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925 met aquamarijn</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Ring 13 */}
-              <div className="group cursor-pointer">
-                <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
-                  <div className="aspect-square relative overflow-hidden bg-white">
-                    <Image
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927798/ringen-15_pzj3sn.jpg"
-                      alt="Sterlingsilver 925 met citrien en peridot"
-                      fill
-                      className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
-                    />
-                  </div>
-                  <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925 met citrien en peridot</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Ring 14 */}
-              <div className="group cursor-pointer">
-                <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
-                  <div className="aspect-square relative overflow-hidden bg-white">
-                    <Image
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927798/ringen-16_higfxb.jpg"
-                      alt="Sterlingsilver 925"
-                      fill
-                      className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
-                    />
-                  </div>
-                  <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Ring 15 */}
-              <div className="group cursor-pointer">
-                <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
-                  <div className="aspect-square relative overflow-hidden bg-white">
-                    <Image
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927798/ringen-17_bxymno.jpg"
-                      alt="Sterlingsilver 925"
-                      fill
-                      className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
-                    />
-                  </div>
-                  <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Ring 16 */}
-              <div className="group cursor-pointer">
-                <div className="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105">
-                  <div className="aspect-square relative overflow-hidden bg-white">
-                    <Image
-                      src="https://res.cloudinary.com/dfdlwn49l/image/upload/v1761927798/ringen-18_vsgjk9.jpg"
-                      alt="Sterlingsilver 925 met peridot"
-                      fill
-                      className="object-contain transition-transform duration-500 group-hover:scale-110 p-4"
-                    />
-                  </div>
-                  <div className="p-5 bg-[#8fc0e5]">
-                    <p className="text-white text-sm text-center truncate px-2">Sterlingsilver 925 met peridot</p>
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </main>
