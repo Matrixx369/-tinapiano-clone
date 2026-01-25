@@ -48,6 +48,8 @@ export default function ContactPage() {
                   className="space-y-6"
                 >
                   <input type="hidden" name="form-name" value="contact" />
+                  <input type="hidden" name="redirect" value="/contact/success" />
+                  <input type="text" name="bot-field" style={{ display: 'none' }} />
                   
                   {/* Name Field */}
                   <div>
