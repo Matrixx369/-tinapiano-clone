@@ -1,3 +1,8 @@
 [build]
   command = "next build && cp -r public/* out/"
   publish = "out"
+
+[[forms]]
+  name = "contact"
+  action = "/contact"
+  methods = ["POST"]
