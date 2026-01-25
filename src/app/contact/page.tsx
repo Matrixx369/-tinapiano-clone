@@ -1,4 +1,4 @@
-'use client'; // Important: this makes the page a Client Component so we can use hooks + onSubmit
+'use client';
 
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
@@ -19,15 +19,20 @@ export default function ContactPage() {
     const form = e.currentTarget;
     const formData = new FormData(form);
 
+    // Convert FormData → array of [key, value] pairs, filter out Files if any
+    const entries = Array.from(formData.entries()).map(([key, value]) => [
+      key,
+      value instanceof File ? '' : value,
+    ]);
+
     try {
       const response = await fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(formData as any).toString(),
+        body: new URLSearchParams(entries).toString(),
       });
 
       if (response.ok) {
-        // Success → redirect to custom success page
         router.push('/contact/success');
       } else {
         alert('Er ging iets mis bij het verzenden. Probeer het opnieuw.');
@@ -179,89 +184,37 @@ export default function ContactPage() {
             <div>
               <h3 className="text-lg font-semibold text-gray-800 mb-4">Informatie</h3>
               <ul className="space-y-2">
-                <li>
-                  <Link href="/over-mij" className="text-[#8fc0e5] hover:underline">
-                    Over mij
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/contact" className="text-[#8fc0e5] hover:underline">
-                    Contact
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/privacybeleid" className="text-[#8fc0e5] hover:underline">
-                    Privacybeleid
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/algemene-voorwaarden" className="text-[#8fc0e5] hover:underline">
-                    Algemene Voorwaarden
-                  </Link>
-                </li>
+                <li><Link href="/over-mij" className="text-[#8fc0e5] hover:underline">Over mij</Link></li>
+                <li><Link href="/contact" className="text-[#8fc0e5] hover:underline">Contact</Link></li>
+                <li><Link href="/privacybeleid" className="text-[#8fc0e5] hover:underline">Privacybeleid</Link></li>
+                <li><Link href="/algemene-voorwaarden" className="text-[#8fc0e5] hover:underline">Algemene Voorwaarden</Link></li>
               </ul>
             </div>
 
             <div>
               <h3 className="text-lg font-semibold text-gray-800 mb-4">Juwelen</h3>
               <ul className="space-y-2">
-                <li>
-                  <Link href="/ringen" className="text-[#8fc0e5] hover:underline">
-                    Ringen
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/oorringen" className="text-[#8fc0e5] hover:underline">
-                    Oorringen
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/mannen" className="text-[#8fc0e5] hover:underline">
-                    Mannen
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/halskettingen" className="text-[#8fc0e5] hover:underline">
-                    Halskettingen
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/armbanden" className="text-[#8fc0e5] hover:underline">
-                    Armbanden
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/broches" className="text-[#8fc0e5] hover:underline">
-                    Broches
-                  </Link>
-                </li>
+                <li><Link href="/ringen" className="text-[#8fc0e5] hover:underline">Ringen</Link></li>
+                <li><Link href="/oorringen" className="text-[#8fc0e5] hover:underline">Oorringen</Link></li>
+                <li><Link href="/mannen" className="text-[#8fc0e5] hover:underline">Mannen</Link></li>
+                <li><Link href="/halskettingen" className="text-[#8fc0e5] hover:underline">Halskettingen</Link></li>
+                <li><Link href="/armbanden" className="text-[#8fc0e5] hover:underline">Armbanden</Link></li>
+                <li><Link href="/broches" className="text-[#8fc0e5] hover:underline">Broches</Link></li>
               </ul>
             </div>
 
             <div>
               <h3 className="text-lg font-semibold text-gray-800 mb-4">Contact</h3>
               <div className="space-y-2 text-gray-700">
-                <p>
-                  E-mailadres:{' '}
-                  <a href="mailto:info@tinapiano.be" className="text-[#8fc0e5] hover:underline">
-                    info@tinapiano.be
-                  </a>
-                </p>
-                <p>
-                  Telefoonnummer:{' '}
-                  <a href="tel:+32488893408" className="text-[#8fc0e5] hover:underline">
-                    +32 488 89 34 08
-                  </a>
-                </p>
+                <p>E-mailadres: <a href="mailto:info@tinapiano.be" className="text-[#8fc0e5] hover:underline">info@tinapiano.be</a></p>
+                <p>Telefoonnummer: <a href="tel:+32488893408" className="text-[#8fc0e5] hover:underline">+32 488 89 34 08</a></p>
                 <p>Adres: Jehennestraat 21, 3770 Riemst</p>
               </div>
             </div>
           </div>
 
           <div className="border-t border-gray-200 mt-8 pt-8 text-center">
-            <Link href="/cookies" className="text-gray-600 hover:text-[#8fc0e5]">
-              Cookies
-            </Link>
+            <Link href="/cookies" className="text-gray-600 hover:text-[#8fc0e5]">Cookies</Link>
           </div>
         </div>
       </footer>

@@ -21,19 +21,19 @@ export default function FadeInSection({ children, delay = 0 }: FadeInSectionProp
         }
       },
       {
-        threshold: 0.1, // Trigger when 10% of element is visible
-        rootMargin: '0px 0px -50px 0px' // Start animation slightly before element is fully visible
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
       }
     )
 
-    const currentRef = sectionRef.current;
-    if (currentRef) {
-      observer.observe(currentRef)
+    const current = sectionRef.current
+    if (current) {
+      observer.observe(current)
     }
 
     return () => {
-      if (currentRef) {
-        observer.unobserve(currentRef)
+      if (current) {
+        observer.unobserve(current)
       }
     }
   }, [delay])
@@ -42,9 +42,7 @@ export default function FadeInSection({ children, delay = 0 }: FadeInSectionProp
     <div
       ref={sectionRef}
       className={`transition-all duration-1000 ease-out ${
-        isVisible
-          ? 'opacity-100 translate-y-0'
-          : 'opacity-0 translate-y-10'
+        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
       }`}
     >
       {children}
