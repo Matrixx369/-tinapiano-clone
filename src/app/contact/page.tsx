@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import Header from '../../components/Header'
-import FadeInSection from '../../components/FadeInSection'
-import ScrollToTop from '../../components/ScrollToTop'
+import Header from '@/components/Header'
+import FadeInSection from '@/components/FadeInSection'
+import ScrollToTop from '@/components/ScrollToTop'
 
 export default function ContactPage() {
   return (
