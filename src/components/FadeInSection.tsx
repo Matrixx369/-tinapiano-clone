@@ -36,7 +36,7 @@ export default function FadeInSection({ children, delay = 0 }: FadeInSectionProp
         observer.unobserve(currentRef)
       }
     }
-  }, [delay]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [delay])
 
   return (
     <div
