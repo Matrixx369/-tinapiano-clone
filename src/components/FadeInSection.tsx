@@ -26,16 +26,17 @@ export default function FadeInSection({ children, delay = 0 }: FadeInSectionProp
       }
     )
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current)
+    const currentRef = sectionRef.current;
+    if (currentRef) {
+      observer.observe(currentRef)
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current)
+      if (currentRef) {
+        observer.unobserve(currentRef)
       }
     }
-  }, [delay])
+  }, [delay]) // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <div
