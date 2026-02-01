@@ -192,7 +192,7 @@ export default function Home() {
             <div className="lg:w-1/2">
               <h2 className="text-4xl md:text-5xl font-light text-[#8fc0e5] mb-8 font-[family-name:var(--font-playfair)] tracking-tight">Juwelen op maat</h2>
               <p className="text-gray-700 text-lg leading-relaxed mb-10" style={{ lineHeight: '1.8' }}>
-                Op zoek naar een uniek juweel die bij uw persoonlijkheid past? Bij 10a juweelontwerp helpen wij u bij het creëren van een op maat gemaakte juweel dat volledig aan uw wensen voldoet. Contacteer ons vandaag nog om een afspraak te maken!
+                Op zoek naar een uniek juweel die bij uw persoonlijkheid past? <br />Bij 10a juweelontwerp helpen wij u bij het creëren van een op maat gemaakte juweel dat volledig aan uw wensen voldoet. Contacteer ons vandaag nog om een afspraak te maken!
               </p>
               <Link 
                 href="/contact"
